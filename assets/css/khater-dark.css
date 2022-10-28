@@ -4,7 +4,7 @@ body.boxed-wrapper .page-wrapper {
 }
 
 .main-header {
-    background-color: var(--oxpins-black);
+    background-color: var(--khater-black);
     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,7 +21,7 @@ body.boxed-wrapper .page-wrapper {
 .about-one__points li .icon:before,
 .events-one,
 .faq-one {
-    background-color: var(--oxpins-black);
+    background-color: var(--khater-black);
 }
 
 
@@ -39,7 +39,7 @@ body.boxed-wrapper .page-wrapper {
 .faq-one-accrodion .accrodion-title h4,
 .news-one__date p,
 .news-one__title a {
-    color: var(--oxpins-white);
+    color: var(--khater-white);
 }
 
 
@@ -83,7 +83,7 @@ body.boxed-wrapper .page-wrapper {
 .causes-one__content,
 .causes-one__progress,
 .news-one__content-box {
-    background-color: var(--oxpins-black);
+    background-color: var(--khater-black);
     border: 1px solid #324340;
 }
 
@@ -111,32 +111,32 @@ body.boxed-wrapper .page-wrapper {
 }
 
 .faq-one-accrodion .accrodion.active .accrodion-title h4 {
-    color: var(--oxpins-primary);
+    color: var(--khater-primary);
 }
 
 .faq-one-accrodion .accrodion .accrodion-title h4::after {
-    background-color: var(--oxpins-black);
+    background-color: var(--khater-black);
 }
 
 .faq-one-accrodion .accrodion-title h4::before {
-    color: var(--oxpins-black);
-    background-color: var(--oxpins-white);
+    color: var(--khater-black);
+    background-color: var(--khater-white);
 }
 
 .news-one__date {
-    background-color: var(--oxpins-base);
+    background-color: var(--khater-base);
 }
 
 .news-one__single .news-one__title:hover a {
-    color: var(--oxpins-primary);
+    color: var(--khater-primary);
 }
 
 .news-one__single .news-one__read-more:hover a {
-    color: var(--oxpins-primary);
+    color: var(--khater-primary);
 }
 
 .news-one__single:hover .news-one__share a {
-    color: var(--oxpins-primary);
+    color: var(--khater-primary);
 }
 
 .causes-one__progress .bar {
@@ -144,20 +144,20 @@ body.boxed-wrapper .page-wrapper {
 }
 
 .events-one__carousel.owl-theme .owl-nav .owl-prev {
-    color: rgba(var(--oxpins-white-rgb), .20);
-    border: 2px solid rgba(var(--oxpins-white-rgb), .20);
+    color: rgba(var(--khater-white-rgb), .20);
+    border: 2px solid rgba(var(--khater-white-rgb), .20);
 }
 
 .events-one__carousel.owl-theme .owl-nav .owl-next {
-    color: rgba(var(--oxpins-white-rgb), .20);
-    border: 2px solid rgba(var(--oxpins-white-rgb), .20);
+    color: rgba(var(--khater-white-rgb), .20);
+    border: 2px solid rgba(var(--khater-white-rgb), .20);
 }
 
 .events-one__carousel.owl-theme .owl-nav .owl-next:hover,
 .events-one__carousel.owl-theme .owl-nav .owl-prev:hover {
     background-color: transparent;
-    color: rgba(var(--oxpins-white-rgb), 1);
-    border: 2px solid rgba(var(--oxpins-white-rgb), 1);
+    color: rgba(var(--khater-white-rgb), 1);
+    border: 2px solid rgba(var(--khater-white-rgb), 1);
 }
 
 
@@ -173,20 +173,20 @@ body.boxed-wrapper .page-wrapper {
 
 
 .thm-btn:before {
-    background-color: var(--oxpins-white);
+    background-color: var(--khater-white);
 }
 
 .thm-btn:hover {
-    color: var(--oxpins-base);
+    color: var(--khater-base);
 }
 
 
 .feature-one__btn:hover {
-    color: var(--oxpins-black);
+    color: var(--khater-black);
 }
 
 .feature-one__btn:before {
-    background-color: var(--oxpins-primary);
+    background-color: var(--khater-primary);
 }
 
 
