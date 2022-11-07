@@ -2442,7 +2442,7 @@ body.locked .page-wrapper {
 .main-slider-shape-2 {
   position: absolute;
   bottom: -68px;
-  left: 30px;
+  left: 130px;
   opacity: 0.07;
   z-index: -1;
 }
@@ -2458,7 +2458,7 @@ body.locked .page-wrapper {
 }
 
 .main-slider__sub-title {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--khater-white);
   font-weight: 700;
   line-height: 40px;
@@ -2477,10 +2477,10 @@ body.locked .page-wrapper {
 
 .main-slider__title {
   position: relative;
-  font-size: 50px;
+  font-size: 40px;
   color: var(--khater-white);
   font-weight: 900;
-  line-height: 83px;
+  line-height: 40px;
   letter-spacing: -0.04em;
   margin-top: 24px;
   margin-bottom: 26px;
