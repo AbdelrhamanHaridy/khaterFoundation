@@ -5018,7 +5018,12 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
 }
-
+.footer-widget__about-logo img{
+  width: 100px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
 .footer-widget__about-text-box {
   position: relative;
   display: block;
