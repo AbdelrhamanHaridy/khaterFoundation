@@ -2458,8 +2458,8 @@ body.locked .page-wrapper {
 }
 
 .main-slider__sub-title {
-  font-size: 40px;
-  color: var(--khater-primary);
+  font-size: 25px;
+  color: var(--khater-white);
   font-weight: 700;
   line-height: 40px;
   font-family: var(--khater-font-three);
@@ -2477,7 +2477,7 @@ body.locked .page-wrapper {
 
 .main-slider__title {
   position: relative;
-  font-size: 80px;
+  font-size: 50px;
   color: var(--khater-white);
   font-weight: 900;
   line-height: 83px;
@@ -3602,7 +3602,9 @@ body.locked .page-wrapper {
   border-radius: var(--khater-bdr-radius);
   z-index: 1;
 }
-
+.events-one__img img{
+  height: 300px;
+}
 .events-one__img:before {
   position: absolute;
   top: 0;
