@@ -2394,7 +2394,7 @@ body.locked .page-wrapper {
 .main-slider .swiper-slide {
   position: relative;
   background-color: var(--khater-black);
-  height: 75vh;
+  height: 80vh;
 }
 
 .main-slider .container {
@@ -2487,6 +2487,7 @@ body.locked .page-wrapper {
   font-weight: 900;
   line-height: 40px;
   letter-spacing: -0.04em;
+  margin-top: 24px;
   margin-bottom: 26px;
   opacity: 0;
   visibility: hidden;

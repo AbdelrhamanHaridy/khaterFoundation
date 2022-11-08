@@ -1599,7 +1599,10 @@
     .main-menu-two__left {
         padding-left: 30px;
     }
-
+    .main-slider__title {
+        font-size: 35px;
+        line-height: 32px;
+    }
     .main-menu-two__shape-1 {
         display: none;
     }
