@@ -11,6 +11,8 @@
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <style>
         #map {
             height: 500px;
@@ -20,29 +22,57 @@
 
 <body>
     <div id="map"></div>
+    <div class="story" >First story. Click to zoom</div>
+    <div class="swiper-slide story" data-point="30.024167,31.2329127,Face_charity_in_Maadi.jpeg">
+        <img style="width: 50px;" src="assets/images/brand/brand-1-1.png" alt="">
+    </div><!-- /.swiper-slide -->
+    <div class="swiper-slide story" data-point="30.022863,31.2378640,57375.jpeg">
+        <img style="width: 50px;" src="assets/images/map/57375.jpeg" alt="">
+    </div><!-- /.swiper-slide -->
     <script>
+        // basic map setup. include other options as needed, refer to the docs
         var map = L.map('map').setView([30.022863,    31.2378640], 7);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        function onMapClick(e) {
-            alert("You clicked the map at " + e.latlng);
-        }
+        // bind click event to the story divs, add a marker and zoom to that story's location. Remember to add dot before story as it is classname
+        $('.story').on('click', function(){
+            // parse lat and lng from the divs data attribute
+            var latlng = $(this).data().point.split(',');
+            var lat = latlng[0];
+            var lng = latlng[1];
+            var img = latlng[2];
+            var zoom = 15;
+
+            // add a marker
+            var marker = L.marker([lat, lng],{}).addTo(map).bindPopup(`<img src='assets/images/map/${img}' style='max-width:100%'><br>Children's Cancer Hospital 57357`).openPopup();
+            // set the view
+            map.setView([lat, lng], zoom);
+        })
+        // var map = L.map('map').setView([30.022863,    31.2378640], 7);
+        // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //     maxZoom: 19,
+        //     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        // }).addTo(map);
+
+        // function onMapClick(e) {
+        //     alert("You clicked the map at " + e.latlng);
+        // }
 
         function onZoomInMark(e) {
             map.panTo(e.latlng).zoomIn(2);
             map.setView(e.latlng, 11); 
         }
-        map.on('click', onMapClick);
+        // map.on('click', onMapClick);
         
 
         L.marker([30.0291525,   31.2320731]).addTo(map).bindPopup("<img src='assets/images/map/57375.jpeg' style='max-width:100%'><br> Abu Al-Rish Japanese Hospital").on('click', onZoomInMark);
         
         L.marker([30.0295451,   31.2371218]).addTo(map).bindPopup("<img src='assets/images/map/Abu _El _Reesh_Al_Mounira.jpeg' style='max-width:100%'><br> Abu El Reesh Hospital in Al Mounira ").on('click', onZoomInMark);
         
-        L.marker([30.60955, 31.772461]).addTo(map).bindPopup("<img src='assets/images/map/Al_Sharqia_Governorate .jpeg' style='max-width:100%'><br> Al Sharqia Governorate ").on('click', onZoomInMark);
+        L.marker([30.60955, 31.772461]).addTo(map).bindPopup("<img src='assets/images/map/Al_Sharqia_Governorate.jpeg' style='max-width:100%'><br> Al Sharqia Governorate ").on('click', onZoomInMark);
         
         L.marker([28.381735, 30.959473]).addTo(map).bindPopup("<img src='assets/images/map/Minya_Governorate.jpeg' style='max-width:100%'><br> Minya Governorate").on('click', onZoomInMark);
         L.marker([30.024167,    31.2329127]).addTo(map).bindPopup("<img src='assets/images/map/National_Cancer_Institute _Cairo.jpg' style='max-width:100%'><br> National Cancer Institute in Cairo").on('click', onZoomInMark);
