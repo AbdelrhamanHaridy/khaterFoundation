@@ -50,6 +50,10 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/khater.css" />
     <link rel="stylesheet" href="assets/css/khater-responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 </head>
 
 <body class="custom-cursor">
@@ -83,16 +87,6 @@
                         <div class="main-menu__right">
                             <div class="main-menu__right-top">
                                 <div class="main-menu__right-top-left">
-                                    <div class="main-menu__volunteers">
-                                        <div class="">
-                                            <img src="assets/images/icon/hart.png" alt="" style="width: 40px;">
-                                        </div>
-                                        <div class="main-menu__volunteers-text-box">
-                                            <p class="main-menu__volunteers-text"><a href="become-volunteer.html">Become
-                                                    a
-                                                    <span>volunteers</span></a></p>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="main-menu__right-top-right">
                                     <div class="main-menu__right-top-address">
@@ -102,7 +96,7 @@
                                                     <span class="icon-phone-call"></span>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Helpline</p>
+                                                    <p>Call Us </p>
                                                     <h5><a href="tel:980009630">010 162 88 555</a></h5>
                                                 </div>
                                             </li>
@@ -121,18 +115,13 @@
                                                     <span class="icon-location"></span>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Degla Square</p>
-                                                    <h5>Qesm Maadi, Cairo</h5>
+                                                    <p>Location</p>
+                                                    <h5>Degla Square,Maadi</h5>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="main-menu__right-top-social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="main-menu__right-bottom">
@@ -141,25 +130,22 @@
                                     <ul class="main-menu__list">
                                         <li class="current megamenu"><a href="index.html">Home </a></li>
                                         <li class="current megamenu"><a href="about.html">About </a></li>
-                                        <li class="current megamenu"><a href="news-sidebar-left.html">News </a></li>
-                                        <li class="current megamenu"><a href="programs.html">Our Programs </a></li>
-                                        <li class="current megamenu"><a href="gallery.html">Gallery </a></li>
-                                        <li class="current megamenu"><a href="become-volunteer.html">Become </a></li>
+                                        <li class="current megamenu"><a href="news-sidebar-left.html">Blog </a></li>
+                                        <li class="current megamenu"><a href="impact.html">Our Impact </a></li>
                                         <li class="current megamenu"><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div class="main-menu__main-menu-content-box">
                                     <div class="main-menu__search-cat-btn-box">
-                                        <div class="main-menu__search-box">
-                                            <a href="#"
-                                                class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                                        </div>
-                                        <div class="main-menu__cat-box">
-                                            <a href="#" class="main-menu__cart icon-avatar"></a>
-                                        </div>
                                         <div class="main-menu__btn-box">
-                                            <a href="donate-now.html" class="main-menu__btn"> <span
-                                                    class="fa fa-heart"></span> Call us Now</a>
+                                            <div href="#" class="main-menu__btn p-3">
+                                                <div class="main-menu__right-top-social">
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -234,12 +220,12 @@
             </div>
         </section>
         <!--About Four End-->
-        <section class="content-inner-1">
+        <section class="content-inner-1 pt-5 mt-5">
             <div class="container">
                 <div class="section-head wow fadeInUp text-center" data-wow-delay="1s"
                     style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
-                    <p class="wow fadeInUp m-b0" data-wow-delay="1.5s"
-                        style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">Our story begins with Dr. Salah Khater, a true philanthropist and a sincere supporter of his local community</p>
+                    <!-- <p class="wow fadeInUp m-b0" data-wow-delay="1.5s"
+                        style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">Our story begins with Dr. Salah Khater, a true philanthropist and a sincere supporter of his local community</p> -->
                 </div>
                 <div class="history-wrapper">
                     <div class="history-wrapper-bx">
@@ -647,55 +633,68 @@
         </section>
         <!--Brand One End-->
 
+        <div id="map" style="height: 300px;">
+
+        </div>
+
+
+        <!--Site Footer Start-->
         <!--Site Footer Start-->
         <footer class="site-footer">
             <div class="site-footer-bg" style="background-image: url(assets/images/backgrounds/site-footer-bg.jpg);">
             </div>
             <div class="site-footer__top">
-                <div class="container">
+                <div class="container ">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__about-logo">
-                                    <a href="index.html"><img src="assets/images/2448648.png" alt=""
-                                            style="width: 100px"></a>
+                                    <a href=""><img src="assets/images/resources/footer-logo.png" alt=""></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
-                                    <p class="footer-widget__about-text">Nulla ultricies justo sit amet ante efficitur,
-                                        eget pharetra augue efficitur. Vestibulum viverra, dolor sit amet ultricies.</p>
+                                    <div class="site-footer__social">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="col-xl-1 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__column footer-widget__links clearfix">
                                 <h3 class="footer-widget__title">Links</h3>
                                 <ul class="footer-widget__links-list list-unstyled clearfix">
                                     <li><a href="about.html">About us</a></li>
                                     <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="col-xl-1 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div class="footer-widget__column footer-widget__non-profit clearfix">
-                                <h3 class="footer-widget__title">Non profit</h3>
+                                <h3 class="footer-widget__title"> profit</h3>
                                 <ul class="footer-widget__non-profit-list list-unstyled clearfix">
-                                    <li><a href="donation-details.html">Differently Abled Kids</a></li>
-                                    <li><a href="donation-details.html">Help Child Cancer</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="become-volunteer.html">Become</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
-                                <p class="footer-widget__contact-text">380 Street Kilda Broklyn Road <br> Melbourne
-                                    Australia
-                                </p>
+                                <p class="footer-widget__contact-text">Degla, Maadi, Cairo</p>
                                 <ul class="list-unstyled footer-widget__contact-list">
                                     <li>
                                         <div class="icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
                                         <div class="text">
-                                            <p><a href="mailto:info@khaterfoundation.com ">info@khaterfoundation.com</a></p>
+                                            <p><a
+                                                    href="mailto:info@khaterfoundation.com ">info@khaterfoundation.com</a>
+                                            </p>
                                         </div>
                                     </li>
                                     <li>
@@ -707,13 +706,39 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-1"></div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp">
+                            <form action="https://layerdrops.com/khater/main-html/assets/inc/sendemail.php" class="contact-page__form contact-form-validated"
+                            novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="contact-form__input-box">
+                                        <input type="text" placeholder="Your name" name="name">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-form__input-box">
+                                        <input type="email" placeholder="Email address" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-form__input-box">
+                                        <input type="text" placeholder="Phone" name="phone">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="">
+                                        <button type="submit" class="thm-btn contact-form__btn">Send a message</button>
+                                    </div>
                                 </div>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -732,6 +757,7 @@
                 </div>
             </div>
         </footer>
+        <!--Site Footer End-->
         <!--Site Footer End-->
 
 
@@ -827,6 +853,26 @@
 
     <!-- template js -->
     <script src="assets/js/khater.js"></script>
+
+    <script>
+        var map = L.map('map').setView([30.022863,    31.2378640], 12);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var attrOptions = {
+            prefix: ' sample'
+        };
+
+        L.marker([30.0291525,   31.2320731]).addTo(map).bindPopup("<img src='assets/images/map/57375.jpeg' style='max-width:100%'><br> Abu Al-Rish Japanese Hospital");
+        L.marker([30.0295451,   31.2371218]).addTo(map).bindPopup("<img src='assets/images/map/Abu _El _Reesh_Al_Mounira.jpeg' style='max-width:100%'><br> Abu El Reesh Hospital in Al Mounira ");
+        L.marker([30.6730544,   32.2802997,9]).addTo(map).bindPopup("<img src='assets/images/map/Al_Sharqia_Governorate .jpeg' style='max-width:100%'><br> Al Sharqia Governorate ");
+        L.marker([28.1831752,   31.6381596,8]).addTo(map).bindPopup("<img src='assets/images/map/Minya_Governorate.jpeg' style='max-width:100%'><br> Minya Governorate");
+        L.marker([30.024167,    31.2329127]).addTo(map).bindPopup("<img src='assets/images/map/National_Cancer_Institute _Cairo.jpg' style='max-width:100%'><br> National Cancer Institute in Cairo");
+        L.marker([30.0605883,   31.2266561]).addTo(map).bindPopup(" <img src='assets/images/map/Magdi_Yacoub_Hospital_in_Aswan.jpeg' style='max-width:100%'><br> Magdi Yacoub Hospital in Aswan");
+        L.marker([29.9640741,   31.2800189]).addTo(map).bindPopup("<img src='assets/images/map/Face_charity_in_Maadi.jpeg' style='max-width:100%'><br> Face charity in Maadi");
+        L.marker([30.022863,    31.2378640]).addTo(map).bindPopup("<img src='assets/images/map/57375.jpeg' style='max-width:100%'><br>Children's Cancer Hospital 57357");
+    </script>
 </body>
 
 
