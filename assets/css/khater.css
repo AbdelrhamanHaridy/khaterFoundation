@@ -2394,7 +2394,7 @@ body.locked .page-wrapper {
 .main-slider .swiper-slide {
   position: relative;
   background-color: var(--khater-black);
-  height: 80vh;
+  height: 95vh;
 }
 
 .main-slider .container {

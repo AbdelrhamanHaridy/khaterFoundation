@@ -1599,10 +1599,18 @@
     .main-menu-two__left {
         padding-left: 30px;
     }
+
     .main-slider__title {
         font-size: 35px;
         line-height: 32px;
     }
+
+    .main-slider .swiper-slide {
+        position: relative;
+        background-color: var(--khater-black);
+        height: 95vh;
+    }
+
     .main-menu-two__shape-1 {
         display: none;
     }
@@ -1666,9 +1674,11 @@
     .main-menu__right-top-social {
         display: none;
     }
+
     .main-menu__main-menu-content-box {
         display: none;
     }
+
     .main-menu-three__search-cat {
         margin-left: 40px;
     }
@@ -1682,9 +1692,11 @@
     .main-menu__right-top-social {
         display: none;
     }
+
     .main-menu__main-menu-content-box {
         display: none;
     }
+
     .main-menu__right-top {
         justify-content: inherit;
     }
