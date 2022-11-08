@@ -2394,7 +2394,7 @@ body.locked .page-wrapper {
 .main-slider .swiper-slide {
   position: relative;
   background-color: var(--khater-black);
-  height: 95vh;
+  height: 80vh;
 }
 
 .main-slider .container {
@@ -5239,7 +5239,7 @@ body.locked .page-wrapper {
 
 .site-footer__social a {
   position: relative;
-  height: 40px;
+  height: 38px;
   width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
