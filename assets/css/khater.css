@@ -708,8 +708,8 @@ ul {
 }
 
 .main-menu__right-top-social a:hover {
-  color: var(--khater-white);
-  background-color: var(--khater-base);
+  color: var(--khater-black);
+  background-color: var(--khater-primary);
 }
 
 .main-menu__right-top-social a:after {
@@ -719,7 +719,7 @@ ul {
   left: 0;
   right: 0;
   height: 100%;
-  background-color: var(--khater-base);
+  background-color: var(--khater-primary);
   -webkit-transition-delay: .1s;
   transition-delay: .1s;
   -webkit-transition-timing-function: ease-in-out;
@@ -5308,7 +5308,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   text-align: center;
-  padding: 25px 0;
+  padding: 5px 0;
 }
 
 .site-footer__bottom-text {
