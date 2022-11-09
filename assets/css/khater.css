@@ -4703,11 +4703,29 @@ body.locked .page-wrapper {
   top: -4px;
 }
 
-.counter-one__text {
+.counter-one__text1 {
   position: relative;
   display: inline-block;
   font-size: 24px;
-  color: #89d3c6;
+  color: var(--khater-secondary-4);
+  font-weight: 700;
+  font-family: var(--khater-font-three);
+  line-height: 24px;
+}
+.counter-one__text2 {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  color: var(--khater-secondary-2);
+  font-weight: 700;
+  font-family: var(--khater-font-three);
+  line-height: 24px;
+}
+.counter-one__text3 {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  color: var(--khater-secondary-1);
   font-weight: 700;
   font-family: var(--khater-font-three);
   line-height: 24px;
