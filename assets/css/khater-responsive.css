@@ -1608,7 +1608,7 @@
     .main-slider .swiper-slide {
         position: relative;
         background-color: var(--khater-black);
-        height: 95vh;
+        height: 85vh;
     }
 
     .main-menu-two__shape-1 {

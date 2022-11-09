@@ -36,7 +36,7 @@
 body {
   font-family: var(--khater-font);
   color: var(--khater-gray);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
@@ -85,6 +85,7 @@ h6 {
   color: var(--khater-black);
   font-family: var(--khater-font-two);
   margin: 0;
+  font-size: 32px;
 }
 
 p {
@@ -487,7 +488,7 @@ ul {
 
 .main-menu__right {
   display: block;
-  width: 91%;
+  width: 81%;
 }
 
 .main-menu__right-top {
@@ -696,9 +697,9 @@ ul {
   -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
-  color: var(--khater-black);
+  color: var(--khater-bdr-color);
   font-size: 14px;
-  background-color: var(--khater-extra);
+  background-color: var(--khater-black);
   border-radius: 50%;
   overflow: hidden;
   -webkit-transition: all 500ms ease;
@@ -751,7 +752,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--khater-base);
   padding-left: 50px;
   border-top-left-radius: 15px;
 }
@@ -825,7 +825,6 @@ ul {
 .main-menu__btn {
   font-size: 14px;
   font-weight: 700;
-  color: var(--khater-black);
   background-color: var(--khater-primary);
   padding-left: 50px;
   padding-top: 17px;
@@ -898,8 +897,7 @@ ul {
 
 .main-menu .main-menu__list>li,
 .stricky-header .main-menu__list>li {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 20px;
   position: relative;
 }
 
@@ -936,7 +934,8 @@ ul {
 .stricky-header .main-menu__list>li.current-menu-item>a,
 .stricky-header .main-menu__list>li.current-menu-page>a,
 .stricky-header .main-menu__list>li:hover>a {
-  color: var(--khater-white);
+  color: #522e90;
+  
 }
 
 .main-menu .main-menu__list>li>ul,
@@ -2394,13 +2393,13 @@ body.locked .page-wrapper {
 .main-slider .swiper-slide {
   position: relative;
   background-color: var(--khater-black);
-  height: 80vh;
+  height: 70vh;
 }
 
 .main-slider .container {
   position: relative;
-  padding-top: 170px;
-  padding-bottom: 175px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   z-index: 30;
 }
 
@@ -3014,7 +3013,7 @@ body.locked .page-wrapper {
 }
 
 .about-one__img img {
-  height: 500px;
+  height: 600px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 335px;
   border-bottom-right-radius: 335px;
@@ -3024,8 +3023,8 @@ body.locked .page-wrapper {
   position: absolute;
   top: -30px;
   left: -30px;
-  height: 495px;
-  width: 370px;
+  height: 595px;
+  width: 400px;
   border: 6px solid var(--khater-primary);
   border-bottom-left-radius: 300px;
   border-bottom-right-radius: 300px;
@@ -3472,6 +3471,7 @@ body.locked .page-wrapper {
   display: block;
   z-index: 1;
   padding: 113px 0 120px;
+  margin-top:100px;
 }
 
 .become-volunteer-one__bg-box {
@@ -3480,7 +3480,7 @@ body.locked .page-wrapper {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--khater-base);
+  background-color: #4D4D4F;
   z-index: -1;
 }
 
@@ -3543,7 +3543,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   background-color: var(--khater-extra);
-  padding: 120px 0 120px;
+  padding-top: 120px;
   z-index: 1;
 }
 
@@ -3598,18 +3598,16 @@ body.locked .page-wrapper {
   display: block;
   -webkit-box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.2);
-  border-radius: var(--khater-bdr-radius);
 }
 
 .events-one__img {
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: var(--khater-bdr-radius);
   z-index: 1;
 }
 .events-one__img img{
-  height: 300px;
+  height: 350px;
 }
 .events-one__img:before {
   position: absolute;
@@ -3634,7 +3632,6 @@ body.locked .page-wrapper {
   transform: scale(1, 0);
   transition: transform 500ms ease;
   transform-origin: top center;
-  border-radius: var(--khater-bdr-radius);
   z-index: 1;
 }
 
@@ -3645,7 +3642,6 @@ body.locked .page-wrapper {
 
 .events-one__img img {
   width: 100%;
-  border-radius: var(--khater-bdr-radius);
   transform: scale(1);
   transition: transform 500ms ease;
 }
@@ -5012,7 +5008,7 @@ body.locked .page-wrapper {
 .site-footer__top {
   position: relative;
   display: block;
-  padding: 100px 0 98px;
+  padding: 40px 20px;
 }
 
 .footer-widget__about {
@@ -11015,7 +11011,7 @@ body.locked .page-wrapper {
 # FAQ Two
 --------------------------------------------------------------*/
 .faq-two {
-  padding: 120px 0 120px;
+  padding:  0px;
 }
 
 /*--------------------------------------------------------------
