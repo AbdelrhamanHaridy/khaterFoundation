@@ -901,7 +901,7 @@ ul {
 
 .main-menu .main-menu__list>li,
 .stricky-header .main-menu__list>li {
-  padding: 20px;
+  padding:0 30px;
   position: relative;
 }
 
@@ -939,6 +939,27 @@ ul {
 .stricky-header .main-menu__list>li.current-menu-page>a,
 .stricky-header .main-menu__list>li:hover>a {
   color: var(--khater-secondary-1);
+  padding: 5px 10px;
+
+}
+
+
+.main-menu .main-menu__list>li.current>a:hover,
+.main-menu .main-menu__list>li.current-menu-ancestor>a:hover,
+.main-menu .main-menu__list>li.current-menu-item>a:hover,
+.main-menu .main-menu__list>li.current-menu-page>a:hover,
+.main-menu .main-menu__list>li.current_page_item>a:hover,
+.main-menu .main-menu__list>li:hover>a:hover,
+.stricky-header .main-menu__list>li.current>a:hover,
+.stricky-header .main-menu__list>li.current_page_item>a:hover,
+.stricky-header .main-menu__list>li.current-menu-ancestor>a:hover,
+.stricky-header .main-menu__list>li.current-menu-item>a:hover,
+.stricky-header .main-menu__list>li.current-menu-page>a:hover,
+.stricky-header .main-menu__list>li:hover>a:hover {
+  color: var(--khater-bdr-color);
+  background-color: var(--khater-base);
+  padding: 5px 10px;
+  border-radius: 10px;
 
 }
 
@@ -3485,7 +3506,7 @@ body.locked .page-wrapper {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #4D4D4F;
+  background-color: #838383;
   z-index: -1;
 }
 
@@ -4671,8 +4692,9 @@ body.locked .page-wrapper {
   margin-bottom: 7px;
 }
 
-.counter-one__count-box h3 {
-  font-size: 60px;
+.counter-one__list h3 {
+  font-size: 50px;
+  padding: 0 10px;
   color: var(--khater-white);
   font-weight: 900;
   font-family: var(--khater-font-two) !important;
@@ -4706,7 +4728,7 @@ body.locked .page-wrapper {
 .counter-one__text1 {
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--khater-secondary-4);
   font-weight: 700;
   font-family: var(--khater-font-three);
@@ -4715,7 +4737,7 @@ body.locked .page-wrapper {
 .counter-one__text2 {
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--khater-secondary-2);
   font-weight: 700;
   font-family: var(--khater-font-three);
@@ -4724,7 +4746,7 @@ body.locked .page-wrapper {
 .counter-one__text3 {
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--khater-secondary-1);
   font-weight: 700;
   font-family: var(--khater-font-three);
