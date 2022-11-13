@@ -386,8 +386,9 @@ ul {
   background-image: url(../images/loader.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 60px auto;
+  background-size: 200px auto;
   width: 200px;
+  height: 200px;
 } 
 
 /* scroll to top */
@@ -3048,7 +3049,7 @@ body.locked .page-wrapper {
 }
 
 .about-one__img img {
-  width:  550px;
+  width:  400px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 335px;
   border-bottom-right-radius: 335px;
