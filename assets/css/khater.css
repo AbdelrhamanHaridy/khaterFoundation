@@ -387,8 +387,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
-  width: 100%;
-  height: 100%;
+  width: 200px;
 }
 
 /* scroll to top */
@@ -2997,19 +2996,6 @@ body.locked .page-wrapper {
   -webkit-transform: translateY(0) translateX(0);
   transform: translateY(0) translateX(0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
