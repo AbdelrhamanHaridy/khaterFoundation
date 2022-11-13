@@ -938,7 +938,7 @@ ul {
 .stricky-header .main-menu__list>li.current-menu-item>a,
 .stricky-header .main-menu__list>li.current-menu-page>a,
 .stricky-header .main-menu__list>li:hover>a {
-  color: var(--khater-secondary-1);
+  color: var(--khater-gray);
 }
 
 
@@ -11089,7 +11089,7 @@ body.locked .page-wrapper {
 # FAQ Two
 --------------------------------------------------------------*/
 .faq-two {
-  padding-top: 30px;
+  margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
