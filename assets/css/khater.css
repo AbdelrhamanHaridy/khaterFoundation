@@ -492,7 +492,7 @@ ul {
 
 .main-menu__right {
   display: block;
-  width: 85%;
+  width: 75%;
 }
 
 .main-menu__right-top {
@@ -901,7 +901,7 @@ ul {
 
 .main-menu .main-menu__list>li,
 .stricky-header .main-menu__list>li {
-  padding:0 28px;
+  padding:0 20px;
   position: relative;
 }
 
@@ -3518,7 +3518,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   z-index: 1;
-  padding: 113px 0 120px;
+  padding: 40px 0 60px;
 }
 
 .become-volunteer-one__bg-box {
@@ -3527,7 +3527,6 @@ body.locked .page-wrapper {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #838383;
   z-index: -1;
 }
 
@@ -3589,8 +3588,6 @@ body.locked .page-wrapper {
 .events-one {
   position: relative;
   display: block;
-  background-color: var(--khater-extra);
-  padding-top: 120px;
   z-index: 1;
 }
 
@@ -4013,6 +4010,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   border-top: 1px solid var(--khater-bdr-color);
+  background:  #f9f4e8;
   padding: 60px 0 60px;
 }
 
@@ -5085,7 +5083,7 @@ body.locked .page-wrapper {
 .site-footer__top {
   position: relative;
   display: block;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .footer-widget__about {
@@ -5160,9 +5158,6 @@ body.locked .page-wrapper {
   display: block;
 }
 
-.footer-widget__links-list li+li {
-  margin-top: 11px;
-}
 
 .footer-widget__links-list li a {
   position: relative;
@@ -5308,7 +5303,6 @@ body.locked .page-wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 22px;
 }
 
 .site-footer__social a {
@@ -11697,3 +11691,4 @@ body.boxed-wrapper {
     left: 100%;
   }
 }
+
