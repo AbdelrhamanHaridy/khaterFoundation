@@ -3049,7 +3049,7 @@ body.locked .page-wrapper {
 }
 
 .about-one__img img {
-  width:  400px;
+  width:  300px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 335px;
   border-bottom-right-radius: 335px;
@@ -11727,8 +11727,8 @@ body.boxed-wrapper {
   height: 300px;
   background: url(../images/New\ Project.png) repeat-x left center;
   background-size: cover;
-  -webkit-animation: displace 50s linear infinite;
-  animation: displace 50s linear infinite;
+  -webkit-animation: displace 70s linear infinite;
+  animation: displace 70s linear infinite;
 }
 
 @-webkit-keyframes displace {
