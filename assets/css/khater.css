@@ -4660,6 +4660,7 @@ body.locked .page-wrapper {
 }
 
 .counter-one__list {
+  margin-top: -30px;
   position: relative;
   display: flex;
   align-items: center;
