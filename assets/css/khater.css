@@ -3049,7 +3049,7 @@ body.locked .page-wrapper {
 }
 
 .about-one__img img {
-  width:  300px;
+  width:  400px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 335px;
   border-bottom-right-radius: 335px;
@@ -3506,7 +3506,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   z-index: 1;
-  padding: 40px 0 60px;
+  padding: 30px 20px 70px;
 }
 
 .become-volunteer-one__bg-box {
@@ -4753,7 +4753,7 @@ body.locked .page-wrapper {
   position: relative;
   display: inline-block;
   font-size: 22px;
-  color: var(--khater-secondary-5);
+  color: var(--khater-secondary-1);
   font-weight: 700;
   font-family: var(--khater-font-three);
   line-height: 24px;
@@ -11725,7 +11725,7 @@ body.boxed-wrapper {
 }
 
 .innerpage_slider {
-  height: 300px;
+  height: 260px;
   background: url(../images/New\ Project.png) repeat-x left center;
   background-size: cover;
   -webkit-animation: displace 70s linear infinite;
