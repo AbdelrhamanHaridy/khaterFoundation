@@ -3014,7 +3014,7 @@ body.locked .page-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  height: 690px;
+  height: 540px;
   width: 625px;
   background-color: var(--khater-extra);
   z-index: -1;
