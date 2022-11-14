@@ -50,10 +50,19 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/khater.css" />
     <link rel="stylesheet" href="assets/css/khater-responsive.css" />
+    <!-- Start Map  -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        #map {
+            height: 500px;
+        }
+    </style>
+    <!-- End Map -->
 </head>
 
 <body class="custom-cursor">
@@ -78,59 +87,21 @@
                     <div class="main-menu__wrapper-inner">
                         <div class="main-menu__left">
                             <div class="main-menu__logo">
-                                <a href="index.html"><img src="assets/images/2448648.png" alt="" width="260px">
+                                <a href="index.html"><img src="assets/images/2448648.png" alt="" width="200px">
 
                                 </a>
                             </div>
 
                         </div>
                         <div class="main-menu__right">
-                            <div class="main-menu__right-top">
-                                <div class="main-menu__right-top-left">
-                                </div>
-                                <div class="main-menu__right-top-right">
-                                    <div class="main-menu__right-top-address">
-                                        <ul class="list-unstyled main-menu__right-top-address-list">
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-phone-call"></span>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Call Us </p>
-                                                    <h5><a href="tel:980009630">010 162 88 555</a></h5>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-message"></span>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Send email</p>
-                                                    <h5><a href="mailto:info@khaterfoundation.com">info@khaterfoundation.com</a>
-                                                    </h5>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-location"></span>
-                                                </div>
-                                                <div class="content">
-                                                    <p>Location</p>
-                                                    <h5>Degla Square,Maadi</h5>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
 
-                                </div>
-                            </div>
                             <div class="main-menu__right-bottom">
                                 <div class="main-menu__main-menu-box">
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                     <ul class="main-menu__list">
                                         <li class="current megamenu"><a href="index.html">Home </a></li>
                                         <li class="current megamenu"><a href="about.html">About </a></li>
-                                        <li class="current megamenu"><a href="news-sidebar-left.html">Blog </a></li>
+                                        <li class="current megamenu"><a href="news-sidebar-left.html">News </a></li>
                                         <li class="current megamenu"><a href="impact.html">Our Impact </a></li>
                                         <li class="current megamenu"><a href="contact.html">Contact</a></li>
                                     </ul>
@@ -138,14 +109,12 @@
                                 <div class="main-menu__main-menu-content-box">
                                     <div class="main-menu__search-cat-btn-box">
                                         <div class="main-menu__btn-box">
-                                            <div href="#" class="main-menu__btn p-3">
                                                 <div class="main-menu__right-top-social">
                                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                                     <a href="#"><i class="fab fa-facebook"></i></a>
                                                     <a href="#"><i class="fab fa-whatsapp"></i></a>
                                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -215,17 +184,18 @@
 
                         </div>
                     </div>
-      
+
                 </div>
             </div>
         </section>
         <!--About Four End-->
-        <section class="content-inner-1 pt-5 mt-5">
+        <section class="content-inner-1">
             <div class="container">
                 <div class="section-head wow fadeInUp text-center" data-wow-delay="1s"
                     style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
-                    <!-- <p class="wow fadeInUp m-b0" data-wow-delay="1.5s"
-                        style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">Our story begins with Dr. Salah Khater, a true philanthropist and a sincere supporter of his local community</p> -->
+                    <p class="wow fadeInUp m-b0" data-wow-delay="1.5s"
+                        style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">Our story begins
+                        with Dr. Salah Khater, a true philanthropist and a sincere supporter of his local community</p>
                 </div>
                 <div class="history-wrapper">
                     <div class="history-wrapper-bx">
@@ -234,7 +204,8 @@
                             <div class="inner-content">
                                 <span>SEP 5th</span>
                                 <h4> 2001</h4>
-                                <p class="mb-0"> Dr. Fahad Salah Khater follows in his father’s footsteps, supporting foundations across the globe.</p>
+                                <p class="mb-0"> Dr. Fahad Salah Khater follows in his father’s footsteps, supporting
+                                    foundations across the globe.</p>
                                 <img src="assets/images/gallery/IMG-20200513-WA0007.jpg" style="width: 100%" alt="">
                             </div>
                         </div>
@@ -244,69 +215,75 @@
                                 <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in
                                     tempor ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit
                                     nisl.</p>
-                                <img src="assets/images/gallery/IMG-20200513-WA0052.jpg" style="width: 100%"
-                                    alt="">
+                                <img src="assets/images/gallery/IMG-20200513-WA0052.jpg" style="width: 100%" alt="">
                             </div>
                         </div>
-                    <div class="history-wrapper-bx">
-                        <div class="year">2007</div>
-                        <div class="history-box">
-                            <div class="inner-content">
-                                <h4> 2007</h4>
-                                <p class="mb-0">Elekta Radiotherapy Machine donated to the National Cancer Institute in Cairo
-                                    Siemens Axiom Catherization machine donated to the Critical Care department at Al Kasr Al Ainy.
+                        <div class="history-wrapper-bx">
+                            <div class="year">2007</div>
+                            <div class="history-box">
+                                <div class="inner-content">
+                                    <h4> 2007</h4>
+                                    <p class="mb-0">Elekta Radiotherapy Machine donated to the National Cancer Institute
+                                        in Cairo
+                                        Siemens Axiom Catherization machine donated to the Critical Care department at
+                                        Al Kasr Al Ainy.
                                     </p>
-                                <img src="assets/images/gallery/IMG-20200513-WA0069.jpg" style="width: 100%" alt="">
+                                    <img src="assets/images/gallery/IMG-20200513-WA0069.jpg" style="width: 100%" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="history-box">
-                            <div class="inner-content">
-                                <img src="assets/images/gallery/IMG-20200513-WA0022.jpg" style="width: 100%" alt="">
+                            <div class="history-box">
+                                <div class="inner-content">
+                                    <img src="assets/images/gallery/IMG-20200513-WA0022.jpg" style="width: 100%" alt="">
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="history-wrapper-bx">
-                        <div class="year">2013</div>
-                        <div class="history-box">
-                            <div class="inner-content">
-                                <h4> 2013</h4>
-                                <p class="mb-0">Machines and equipment donated to Abu El Reesh Japanese Children’s Hospital and the Neonatal Intensive Care Unit at Suez Canal University Hospital
-                                </p>
-                                <img src="assets/images/gallery/IMG-20200513-WA0010.jpg" style="width: 100%" alt="">
-                            </div>
-                        </div>
-                        <div class="history-box">
-                            <div class="inner-content">
-                                <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in
-                                    tempor ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit
-                                    nisl.</p>
-                                <img src="assets/images/gallery/IMG-20200513-WA0068.jpg" style="width: 100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="history-wrapper-bx">
-                        <div class="year">2014</div>
-                        <div class="history-box">
-                            <div class="inner-content">
-                                <h4> 2014</h4>
-                                <p class="mb-0">Machines and equipment donated to Abu El Reesh Japanese Children’s Hospital and the Neonatal Intensive Care Unit at Suez Canal University Hospital
-                                </p>
-                                <img src="assets/images/gallery/IMG-20200513-WA0065.jpg" style="width: 100%" alt="">
-                            </div>
-                        </div>
-                        <div class="history-box">
-                            <div class="inner-content">
-                                <p class="mb-0">Philips Healthcare Echo Ultrasound machine donated to Magdy Yacoub Heart Foundation.
-                                    Support provided to help Advance build its school in New Cairo (the Egyptian Society for Developing Skills of Children with Special Needs)
+                        <div class="history-wrapper-bx">
+                            <div class="year">2013</div>
+                            <div class="history-box">
+                                <div class="inner-content">
+                                    <h4> 2013</h4>
+                                    <p class="mb-0">Machines and equipment donated to Abu El Reesh Japanese Children’s
+                                        Hospital and the Neonatal Intensive Care Unit at Suez Canal University Hospital
                                     </p>
-                                <img src="assets/images/gallery/IMG-20200513-WA0099.jpg" style="width: 100%" alt="">
+                                    <img src="assets/images/gallery/IMG-20200513-WA0010.jpg" style="width: 100%" alt="">
+                                </div>
+                            </div>
+                            <div class="history-box">
+                                <div class="inner-content">
+                                    <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in
+                                        tempor ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu
+                                        elit
+                                        nisl.</p>
+                                    <img src="assets/images/gallery/IMG-20200513-WA0068.jpg" style="width: 100%" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="history-wrapper-bx">
+                            <div class="year">2014</div>
+                            <div class="history-box">
+                                <div class="inner-content">
+                                    <h4> 2014</h4>
+                                    <p class="mb-0">Machines and equipment donated to Abu El Reesh Japanese Children’s
+                                        Hospital and the Neonatal Intensive Care Unit at Suez Canal University Hospital
+                                    </p>
+                                    <img src="assets/images/gallery/IMG-20200513-WA0065.jpg" style="width: 100%" alt="">
+                                </div>
+                            </div>
+                            <div class="history-box">
+                                <div class="inner-content">
+                                    <p class="mb-0">Philips Healthcare Echo Ultrasound machine donated to Magdy Yacoub
+                                        Heart Foundation.
+                                        Support provided to help Advance build its school in New Cairo (the Egyptian
+                                        Society for Developing Skills of Children with Special Needs)
+                                    </p>
+                                    <img src="assets/images/gallery/IMG-20200513-WA0099.jpg" style="width: 100%" alt="">
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
         </section>
 
         <!--FAQ One Start-->
@@ -322,7 +299,9 @@
                                 <h2 class="section-title__title">Vision & Mission
                                 </h2>
                             </div>
-                            <p class="faq-one__text-1">The Khater Foundation was established with the goal of serving marginalized communities by contributing to the health and well-being of individuals across Egypt. </p>
+                            <p class="faq-one__text-1">The Khater Foundation was established with the goal of serving
+                                marginalized communities by contributing to the health and well-being of individuals
+                                across Egypt. </p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
@@ -334,7 +313,9 @@
                                     </div>
                                     <div class="accrodion-content">
                                         <div class="inner">
-                                            <p>To ensure equitable access to quality healthcare services, and to support individuals with the resources required to safeguard their well-being.</p>
+                                            <p>To ensure equitable access to quality healthcare services, and to support
+                                                individuals with the resources required to safeguard their well-being.
+                                            </p>
                                         </div><!-- /.inner -->
                                     </div>
                                 </div>
@@ -344,9 +325,14 @@
                                     </div>
                                     <div class="accrodion-content">
                                         <div class="inner">
-                                            <p>To safeguard the health and wellbeing of people living in Egypt, and tackle challenges that face the two ends of the healthcare spectrum by empowering both recipients and providers with the needed resources.
-                                                The Khater Foundation works on ensuring accountability and sustainability while providing its medical and financial support to achieve its goals through three pillars: development; charity; and advocacy.
-                                                </p>
+                                            <p>To safeguard the health and wellbeing of people living in Egypt, and
+                                                tackle challenges that face the two ends of the healthcare spectrum by
+                                                empowering both recipients and providers with the needed resources.
+                                                The Khater Foundation works on ensuring accountability and
+                                                sustainability while providing its medical and financial support to
+                                                achieve its goals through three pillars: development; charity; and
+                                                advocacy.
+                                            </p>
                                         </div><!-- /.inner -->
                                     </div>
                                 </div>
@@ -356,11 +342,14 @@
                                     </div>
                                     <div class="accrodion-content">
                                         <div class="inner">
-                                            <p>The Foundation’s goals dictate the projects it funds and the people it serves, and they are: 
-                                                Provide support to fill existing gaps and challenges faced in healthcare systems by advising on sustainable operations and availing solutions to beneficiaries
+                                            <p>The Foundation’s goals dictate the projects it funds and the people it
+                                                serves, and they are:
+                                                Provide support to fill existing gaps and challenges faced in healthcare
+                                                systems by advising on sustainable operations and availing solutions to
+                                                beneficiaries
                                                 Empower individuals to pursue their well-being
                                                 Spread health and well-being awareness to help reshape the community
-                                                </p>
+                                            </p>
                                         </div><!-- /.inner -->
                                     </div>
                                 </div>
@@ -407,9 +396,10 @@
                             <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <div class="">
-                                    <img class="rounded w-100" src="assets/images/backgrounds/IMG-20200513-WA0099.jpg" alt="">
+                                    <img class="rounded w-100" src="assets/images/backgrounds/IMG-20200513-WA0099.jpg"
+                                        alt="">
                                 </div>
-   
+
                             </div>
                         </div>
                     </div>
@@ -418,14 +408,20 @@
                             <div class="section-title text-left">
                                 <h2 class="section-title__title">Who we Server</h2>
                             </div>
-                            <p class="about-one__text">The Khater Foundation’s objective is to reach any marginalized community and anyone in need of medical healthcare services but cannot afford it, and invests its knowledge, resources, and efforts to elevate the health and well-being of all underprivileged individuals living in Egypt Egyptians, with the goal of raising the standards and improving the quality of services offered by healthcare providers, in order for Egyptians individuals to live a healthy life and contribute positively to their community and their economy.  </p>
-                       
+                            <p class="about-one__text">The Khater Foundation’s objective is to reach any marginalized
+                                community and anyone in need of medical healthcare services but cannot afford it, and
+                                invests its knowledge, resources, and efforts to elevate the health and well-being of
+                                all underprivileged individuals living in Egypt Egyptians, with the goal of raising the
+                                standards and improving the quality of services offered by healthcare providers, in
+                                order for Egyptians individuals to live a healthy life and contribute positively to
+                                their community and their economy. </p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!--About One End-->
         <section class="events-two">
             <div class="events-two-shape-1" style="background-image: url(assets/images/shapes/events-two-shape-1.png);">
@@ -440,7 +436,11 @@
                                 <span class="section-title__tagline">Where we Serve</span>
                                 <h2 class="section-title__title">Ready to join our latest upcoming events</h2>
                             </div>
-                            <p class="events-two__text">The Khater Foundation supports local communities and healthcare providers across the country. It began by focusing on Hihya City in Al Sharqia, one of Egypt’s largest governorates, and the hometown of the Khater family. Currently, the foundation provides its services to countless communities and providers nationwide including:
+                            <p class="events-two__text">The Khater Foundation supports local communities and healthcare
+                                providers across the country. It began by focusing on Hihya City in Al Sharqia, one of
+                                Egypt’s largest governorates, and the hometown of the Khater family. Currently, the
+                                foundation provides its services to countless communities and providers nationwide
+                                including:
                             </p>
                         </div>
                     </div>
@@ -453,105 +453,109 @@
                 </div>
 
                 <div class="row">
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="events-two__right">
-                                <ul class="list-unstyled events-two__list">
-                                    <li>
-                                        <div class="events-two__img">
-                                            <img src="assets/images/events/events-2-1.jpg" alt="">
-                                            <div class="events-two__date">
-                                                <p>23 May, 2022</p>
-                                            </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="events-two__right">
+                            <ul class="list-unstyled events-two__list">
+                                <li>
+                                    <div class="events-two__img">
+                                        <img src="assets/images/events/events-2-1.jpg" alt="">
+                                        <div class="events-two__date">
+                                            <p>23 May, 2022</p>
                                         </div>
-                                        <div class="events-two__content">
-                                            <ul class="list-unstyled events-two__meta">
-                                                
-                                                <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                            </ul>
-                                            <h3 class="events-two__title"><a href="event-details.html">Cairo “57357” Hospital
-                                                    </a></h3>
-                                            <div class="events-two__read-more">
-                                                <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
-                                                    More</as>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="events-two__img">
-                                            <img src="assets/images/events/events-2-2.jpg" alt="">
-                                            <div class="events-two__date">
-                                                <p>23 May, 2022</p>
-                                            </div>
-                                        </div>
-                                        <div class="events-two__content">
-                                            <ul class="list-unstyled events-two__meta">
-                                                
-                                                <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                            </ul>
-                                            <h3 class="events-two__title"><a href="event-details.html">Kasr Al Ainy Hospitals, Cairo
-                                                    </a></h3>
-                                            <div class="events-two__read-more">
-                                                <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
-                                                    More</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="events-two__right">
-                                <ul class="list-unstyled events-two__list">
-                                    <li>
-                                        <div class="events-two__img">
-                                            <img src="assets/images/events/events-2-1.jpg" alt="">
-                                            <div class="events-two__date">
-                                                <p>23 May, 2022</p>
-                                            </div>
-                                        </div>
-                                        <div class="events-two__content">
-                                            <ul class="list-unstyled events-two__meta">
-                                                
-                                                <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                            </ul>
-                                            <h3 class="events-two__title"><a href="event-details.html">Abu El Reesh Japanese Hospital
-                                                    </a></h3>
-                                            <div class="events-two__read-more">
-                                                <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
-                                                    More</as>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="events-two__img">
-                                            <img src="assets/images/events/events-2-2.jpg" alt="">
-                                            <div class="events-two__date">
-                                                <p>23 May, 2022</p>
-                                            </div>
-                                        </div>
-                                        <div class="events-two__content">
-                                            <ul class="list-unstyled events-two__meta">
-                                                
-                                                <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                            </ul>
-                                            <h3 class="events-two__title"><a href="event-details.html">Abu El Reesh Hospital in Al Mounira 
-                                                    </a></h3>
-                                            <div class="events-two__read-more">
-                                                <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
-                                                    More</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-12">
-                            <a href="about.html" class="thm-btn about-one__btn">See More</a>
+                                    </div>
+                                    <div class="events-two__content">
+                                        <ul class="list-unstyled events-two__meta">
 
+                                            <li><i class="fas fa-map-marker-alt"></i>New York</li>
+                                        </ul>
+                                        <h3 class="events-two__title"><a href="event-details.html">Cairo “57357”
+                                                Hospital
+                                            </a></h3>
+                                        <div class="events-two__read-more">
+                                            <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
+                                                More</as>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="events-two__img">
+                                        <img src="assets/images/events/events-2-2.jpg" alt="">
+                                        <div class="events-two__date">
+                                            <p>23 May, 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="events-two__content">
+                                        <ul class="list-unstyled events-two__meta">
+
+                                            <li><i class="fas fa-map-marker-alt"></i>New York</li>
+                                        </ul>
+                                        <h3 class="events-two__title"><a href="event-details.html">Kasr Al Ainy
+                                                Hospitals, Cairo
+                                            </a></h3>
+                                        <div class="events-two__read-more">
+                                            <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="events-two__right">
+                            <ul class="list-unstyled events-two__list">
+                                <li>
+                                    <div class="events-two__img">
+                                        <img src="assets/images/events/events-2-1.jpg" alt="">
+                                        <div class="events-two__date">
+                                            <p>23 May, 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="events-two__content">
+                                        <ul class="list-unstyled events-two__meta">
+
+                                            <li><i class="fas fa-map-marker-alt"></i>New York</li>
+                                        </ul>
+                                        <h3 class="events-two__title"><a href="event-details.html">Abu El Reesh Japanese
+                                                Hospital
+                                            </a></h3>
+                                        <div class="events-two__read-more">
+                                            <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
+                                                More</as>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="events-two__img">
+                                        <img src="assets/images/events/events-2-2.jpg" alt="">
+                                        <div class="events-two__date">
+                                            <p>23 May, 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="events-two__content">
+                                        <ul class="list-unstyled events-two__meta">
+
+                                            <li><i class="fas fa-map-marker-alt"></i>New York</li>
+                                        </ul>
+                                        <h3 class="events-two__title"><a href="event-details.html">Abu El Reesh Hospital
+                                                in Al Mounira
+                                            </a></h3>
+                                        <div class="events-two__read-more">
+                                            <a href="event-details.html"> <span class="icon-right-arrow"></span> Read
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12">
+                        <a href="about.html" class="thm-btn about-one__btn">See More</a>
+
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -591,54 +595,61 @@
                             }
                         }}'>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt="">
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
+                        <!-- 57357 -->
+                        <div class="swiper-slide story" data-point="30.023051, 31.237779,brand-1-2.png,Children's Cancer Hospital 57357">
                             <img src="assets/images/brand/brand-1-2.png" alt="">
                         </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide story" data-point="24.0882715,32.900754,brand-1-3.png,Magdi Yacoub Hospital in Aswan">
                             <img src="assets/images/brand/brand-1-3.png" alt="">
                         </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide story" data-point="30.031553, 31.226395,brand-1-6.png,Kasr Al Ainy Hospitals ciro">
+                            <img src="assets/images/brand/brand-1-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide story" data-point="30.024057, 31.230955,brand-1-1.png,National Cancer Institute in Cairo">
+                            <img src="assets/images/brand/brand-1-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide story" data-point="30.0287572,31.2360329,brand-1-5.png,Abu El Reesh Japanese Hospital">
+                            <img src="assets/images/brand/brand-1-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide story" data-point="30.0315206,31.2374614,brand-1-4.png,Abu El Reesh Hospital in Al Mounira ">
                             <img src="assets/images/brand/brand-1-4.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
+                        <div class="swiper-slide story" data-point="29.9738291,31.2749382,brand-1-6.png,Face charity in Maadi">
+                            <img src="assets/images/brand/brand-1-6.png" alt="">
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-1-4.png" alt="">
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-5.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-6.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-1.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-2.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-3.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-4.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-5.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/images/brand/brand-1-6.png" alt="">
-                        </div><!-- /.swiper-slide -->
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
         <!--Brand One End-->
-
-        <div id="map" style="height: 300px;">
-
-        </div>
-
-
-        <!--Site Footer Start-->
+        <div id="map"></div>
         <!--Site Footer Start-->
         <footer class="site-footer">
             <div class="site-footer-bg" style="background-image: url(assets/images/backgrounds/site-footer-bg.jpg);">
@@ -661,31 +672,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-1 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__column footer-widget__links clearfix">
-                                <h3 class="footer-widget__title">Links</h3>
+                                <h3 class="footer-widget__title"> Quick links</h3>
                                 <ul class="footer-widget__links-list list-unstyled clearfix">
                                     <li><a href="about.html">About us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Blog</a></li>
+                                    <li><a href="gallery.html"> Our Impact</a></li>
 
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-1 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="footer-widget__column footer-widget__non-profit clearfix">
-                                <h3 class="footer-widget__title"> profit</h3>
-                                <ul class="footer-widget__non-profit-list list-unstyled clearfix">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="become-volunteer.html">Become</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
-                                <p class="footer-widget__contact-text">Degla, Maadi, Cairo</p>
+                                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x145839c7b0d267d3:0x45da94c73096ce18?utm_source=mstt_1&entry=gps&lucs=swa&g_ep=CAESBzEwLjU1LjIYACD___________8BKgNzd2E%3D">
+                                    <p class="footer-widget__contact-text">Degla Square<br>Qesm Maadi, Cairo
+                                    </p>
+                                </a>
                                 <ul class="list-unstyled footer-widget__contact-list">
                                     <li>
                                         <div class="icon">
@@ -709,33 +713,19 @@
 
                             </div>
                         </div>
-                        <div class="col-xl-1"></div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp">
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp">
                             <form action="https://layerdrops.com/khater/main-html/assets/inc/sendemail.php" class="contact-page__form contact-form-validated"
                             novalidate="novalidate">
                             <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="contact-form__input-box">
-                                        <input type="text" placeholder="Your name" name="name">
-                                    </div>
+                                <div class="col-lg-12">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control p-2 rounded" placeholder="Subscribe to our newsletter" aria-label="Subscribe to our newsletter" aria-describedby="button-addon2">
+                                        <button class="btn btn-info text-white" type="button" id="button-addon2">Subscribe</button>
+                                      </div>
+       
                                 </div>
-                                <div class="col-xl-12">
-                                    <div class="contact-form__input-box">
-                                        <input type="email" placeholder="Email address" name="email">
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="contact-form__input-box">
-                                        <input type="text" placeholder="Phone" name="phone">
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="">
-                                        <button type="submit" class="thm-btn contact-form__btn">Send a message</button>
-                                    </div>
+
+       
                                 </div>
                             </div>
                         </form>
@@ -757,7 +747,6 @@
                 </div>
             </div>
         </footer>
-        <!--Site Footer End-->
         <!--Site Footer End-->
 
 
@@ -855,23 +844,84 @@
     <script src="assets/js/khater.js"></script>
 
     <script>
-        var map = L.map('map').setView([30.022863,    31.2378640], 12);
+        // basic map setup. include other options as needed, refer to the docs
+        var map = L.map('map').setView([30.022863, 31.2378640], 7);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            maxZoom: 17,
+            color: 'red',
+            // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-        var attrOptions = {
-            prefix: ' sample'
-        };
 
-        L.marker([30.0291525,   31.2320731]).addTo(map).bindPopup("<img src='assets/images/map/57375.jpeg' style='max-width:100%'><br> Abu Al-Rish Japanese Hospital");
-        L.marker([30.0295451,   31.2371218]).addTo(map).bindPopup("<img src='assets/images/map/Abu _El _Reesh_Al_Mounira.jpeg' style='max-width:100%'><br> Abu El Reesh Hospital in Al Mounira ");
-        L.marker([30.6730544,   32.2802997,9]).addTo(map).bindPopup("<img src='assets/images/map/Al_Sharqia_Governorate .jpeg' style='max-width:100%'><br> Al Sharqia Governorate ");
-        L.marker([28.1831752,   31.6381596,8]).addTo(map).bindPopup("<img src='assets/images/map/Minya_Governorate.jpeg' style='max-width:100%'><br> Minya Governorate");
-        L.marker([30.024167,    31.2329127]).addTo(map).bindPopup("<img src='assets/images/map/National_Cancer_Institute _Cairo.jpg' style='max-width:100%'><br> National Cancer Institute in Cairo");
-        L.marker([30.0605883,   31.2266561]).addTo(map).bindPopup(" <img src='assets/images/map/Magdi_Yacoub_Hospital_in_Aswan.jpeg' style='max-width:100%'><br> Magdi Yacoub Hospital in Aswan");
-        L.marker([29.9640741,   31.2800189]).addTo(map).bindPopup("<img src='assets/images/map/Face_charity_in_Maadi.jpeg' style='max-width:100%'><br> Face charity in Maadi");
-        L.marker([30.022863,    31.2378640]).addTo(map).bindPopup("<img src='assets/images/map/57375.jpeg' style='max-width:100%'><br>Children's Cancer Hospital 57357");
+        // bind click event to the story divs, add a marker and zoom to that story's location. Remember to add dot before story as it is classname
+        $('.story').on('click', function () {
+            // parse lat and lng from the divs data attribute
+            var latlng = $(this).data().point.split(',');
+            var lat = latlng[0];
+            var lng = latlng[1];
+            var img = latlng[2];
+            var txt = latlng[3];
+            var zoom = 17;
+            var marker = L.marker([lat, lng], {}).addTo(map).bindPopup(`<img src='assets/images/brand/${img}' style='max-width:100%'><br> ${txt}`).openPopup().on('click', onZoomInMark);
+            // set the view
+            map.setView([lat, lng], zoom);
+        })
+
+        function onZoomInMark(e) {
+            map.panTo(e.latlng).zoomIn(4);
+            map.setView(e.latlng, 13);
+        }
+        // function onMapClick(e) {
+        //     alert("You clicked the map at " + e.latlng);
+        // }
+        // map.on('click', onMapClick);
+
+        // 57357 Children's Cancer Hospital 57357
+        L.marker([30.023051, 31.237779]).addTo(map);
+
+        // Magdi Yacoub Hospital in Aswan
+        L.marker([24.0882715,32.900754]).addTo(map);
+
+        // Kasr Al Ainy Hospitals, Cairo
+        L.marker([30.031553, 31.226395]).addTo(map);
+
+        // National Cancer Institute in Cairo
+        L.marker([30.024057, 31.230955]).addTo(map);
+
+        // Abu El Reesh Japanese Hospital
+        L.marker([30.0287572,31.2360329]).addTo(map);
+
+        // Abu El Reesh Hospital in Al Mounira 
+        L.marker([30.0315206,31.2374614]).addTo(map);
+        
+        // Face charity in Maadi 
+        L.marker([29.9738291,31.2749382]).addTo(map);
+        
+        // The Egyptian Autistic Society in Maadi
+        L.marker([29.9738268,31.2749382]).addTo(map);
+        
+        // Ahl Masr Foundation in New Cairo
+        L.marker([29.9811238,31.4344669]).addTo(map);
+        
+        // Advance Society for Autism and other Disabilities in New Cairo.
+        L.marker([30.012801,31.4603227]).addTo(map);
+        
+        // Suez Canal University Hospital and University in Ismailia
+        L.marker([30.6225795,32.2837461]).addTo(map);
+        
+        // Minya Governorate
+        L.marker([28.1807533,31.6380565]).addTo(map);
+        
+        // 30.671873,32.2802739
+        L.marker([28.1807533,31.6380565]).addTo(map);
+
+
+    
+    // • 
+    // •  
+    // • 
+    // • 
+    // • Al Sharqia Governorate 
+
     </script>
 </body>
 
