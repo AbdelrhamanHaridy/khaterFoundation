@@ -4496,6 +4496,8 @@ body.locked .page-wrapper {
 .faq-one__left {
   position: relative;
   display: block;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .faq-one__left .section-title {
@@ -7519,6 +7521,7 @@ body.locked .page-wrapper {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 1;
+  height: 350px;
 }
 
 .testimonial-three__single:hover {
@@ -7608,8 +7611,7 @@ body.locked .page-wrapper {
 }
 
 .testimonial-three__text-2 {
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 16px;
 }
 
 .testimonial-three__carousel.owl-carousel .owl-stage-outer {
@@ -7691,6 +7693,7 @@ body.locked .page-wrapper {
 .events-two__left {
   position: relative;
   display: block;
+  text-align: center;
 }
 
 .events-two__left .section-title {
