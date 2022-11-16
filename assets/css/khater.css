@@ -7960,7 +7960,7 @@ body.locked .page-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--khater-black);
+  background-color: var(--khater-gray);
   background-blend-mode: luminosity;
   opacity: 0.7;
   z-index: -1;
@@ -10973,7 +10973,6 @@ body.locked .page-wrapper {
 .about-four__left {
   position: relative;
   display: block;
-  margin-right: 140px;
 }
 
 .about-four__img-box {
@@ -11079,7 +11078,10 @@ body.locked .page-wrapper {
 .faq-two {
   margin-top: 20px;
 }
-
+.faq-three {
+margin-top: 50px;
+margin-bottom: 50px;
+ }
 /*--------------------------------------------------------------
 # News Carousel Page
 --------------------------------------------------------------*/
@@ -11765,9 +11767,9 @@ body.boxed-wrapper {
 }
 
 /******************* Timeline Demo - 9 *****************/
-.main-timeline7 img,
+
 .main-timeline9 img {
-  border-radius: 20px;
+  border-radius: 20px 90px;
 }
 
 .main-timeline9 {
@@ -12268,4 +12270,8 @@ body.boxed-wrapper {
   .main-timeline9 .description {
     text-align: center
   }
+}
+.content-inner-1{
+  background: #f9f4e8;
+  padding: 100px 0;
 }
