@@ -3038,7 +3038,6 @@ body.locked .page-wrapper {
 .about-one__left {
   position: relative;
   display: block;
-  margin-right: 100px;
 }
 
 .about-one__img-box {
@@ -4487,8 +4486,8 @@ body.locked .page-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  width: 807px;
-  height: 626px;
+  width: 100%;
+  height: 70vh;
   opacity: 0.08;
   z-index: -1;
 }
@@ -7514,14 +7513,14 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
   border: 5px solid var(--khater-bdr-color);
-  padding: 65px 48px 40px;
+  padding: 53px 25px;
   border-radius: var(--khater-bdr-radius);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 1;
-  height: 350px;
+  height: 40vh;
 }
 
 .testimonial-three__single:hover {
@@ -7533,23 +7532,24 @@ body.locked .page-wrapper {
   top: -95px;
   left: 50px;
   z-index: 2;
+  padding: 20px;
+  border: 5px solid var(--khater-bdr-color);
+  border-radius: 50%;
+
 }
 
 .testimonial-three__client-img img {
-  width: 150px !important;
-  height: 150px !important;
-  border-radius: 50%;
-  border: 5px solid var(--khater-bdr-color);
+  width: 100px !important;
 }
 
 .testimonial-three__client-info {
   position: absolute;
-  top: -90px;
+  top: -55px;
   left: 228px;
 }
 
 .testimonial-three__client-name {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 36px;
   letter-spacing: -0.04em;
@@ -11082,7 +11082,7 @@ body.locked .page-wrapper {
   margin-top: 20px;
 }
 .faq-three {
-margin-top: 50px;
+  margin-top: 0px;
 margin-bottom: 50px;
  }
 /*--------------------------------------------------------------
@@ -11812,18 +11812,22 @@ body.boxed-wrapper {
   clear: both
 }
 
-.main-timeline9 .timeline:first-child:before,
-.main-timeline9 .timeline:last-child:before {
-  content: "";
-  width: 25px;
-  height: 25px;
+.main-timeline9 .years-2001:before,
+.main-timeline9 .years-2001:before {
+  content: "2001";
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #fff;
-  border: 4px solid #522e90;
+  border: 4px #522e90 dashed;
   position: absolute;
-  top: 0;
-  right: -14px;
-  z-index: 1
+  top: -72px;
+  right: -50px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
 .main-timeline9 .timeline:last-child:before {
@@ -11839,7 +11843,7 @@ body.boxed-wrapper {
 
 .main-timeline9 .timeline-content {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 120px;
   position: relative;
   transition: all .3s ease 0s
 }
@@ -11867,8 +11871,9 @@ body.boxed-wrapper {
   background:
     linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
     linear-gradient(90deg, var(--_g)) 50%/var(--_i, 100%) 100% no-repeat;
-  outline: calc(var(--w)/2) solid #522e902c;
-  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
   transition: .4s;
   cursor: pointer;
 }
@@ -11877,6 +11882,23 @@ body.boxed-wrapper {
   outline: var(--b) solid var(--c);
   outline-offset: calc(var(--s)/-2);
   --_i: calc(100% - 2*var(--s));
+}
+
+  .main-timeline9 .circle-year { 
+    text-align: center;
+    margin: 180px 0;
+    position: relative;
+    transition: all .3s ease 0s;
+}
+
+.main-timeline9 .circle-year:before {
+  content: "";
+  width: 0%;
+  height: 0;
+  position: none;
+  top: 88px;
+  left: 0;
+  z-index: 0;
 }
 .main-timeline9 .line1:before,
 .line1 .circle:before,
@@ -11980,12 +12002,27 @@ body.boxed-wrapper {
   z-index: -1
 }
 
-.main-timeline9 .circle:before {
-  width: 26px;
-  height: 30px;
+
+.content-inner-1 .years {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  border-radius: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  border-style: dashed;
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.04), 0 0 0 16px rgba(0, 0, 0, 0.02);
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  background: #fff;
+  z-index: 1;
+  position: absolute;
   top: 0;
-  box-shadow: inset 7px 0 9px -7px #444
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 .main-timeline9 .circle span {
   display: block;
@@ -12015,7 +12052,7 @@ body.boxed-wrapper {
 
 .main-timeline9 .content {
   display: table;
-  padding-right: 40px;
+  padding:0 40px;
   position: relative
 }
 
@@ -12036,33 +12073,27 @@ body.boxed-wrapper {
   margin-top: 0
 }
 
-.main-timeline9 .icon span:after,
-.main-timeline9 .icon span:before,
-.main-timeline9 .icon:before {
-  content: "";
-  height: 25px;
-  margin: auto;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-  left: -15px
-}
 
 .main-timeline9 .description {
   font-size: 14px;
+  padding-top: 120px;
   color: #a6a6a6;
   text-align: justify
 }
 
 .main-timeline9 .icon {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #fff;
-  border: 4px solid;
-  position: absolute;
-  top: 78px;
-  right: -14px
+  width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px dashed;
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-timeline9 .icon:before {
@@ -12118,7 +12149,7 @@ body.boxed-wrapper {
 
 .main-timeline9 .timeline:nth-child(2n) .icon {
   right: auto;
-  left: -14px
+  left: -50px
 }
 
 .main-timeline9 .timeline:nth-child(2n) .icon span:after,
@@ -12141,7 +12172,7 @@ body.boxed-wrapper {
 }
 
 .main-timeline9 .timeline:nth-child(odd) {
-  margin: -175px 0 0
+  margin: -247px 0 0
 }
 
 .main-timeline9 .timeline:nth-child(even) {
@@ -12199,7 +12230,7 @@ body.boxed-wrapper {
 
   .main-timeline9 .timeline:nth-child(2n) .icon {
     right: -14px;
-    left: auto
+    left: 0
   }
 
   .main-timeline9 .timeline:nth-child(2n) .icon span:after,
@@ -12258,7 +12289,9 @@ body.boxed-wrapper {
   .main-timeline9 .circle span:before,
   .main-timeline9 .circle:before,
   .main-timeline9 .icon {
-    display: none
+    left: 0;
+    top: -111px;
+
   }
 
   .main-timeline9 .content,
