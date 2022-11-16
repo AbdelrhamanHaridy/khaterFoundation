@@ -13,6 +13,18 @@
         z-index: 1;
         height: 55vh;
     }
+    .testimonial-three__text-2 {
+        font-size: 14px;
+    }
+    .faq-one-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 95vh;
+        opacity: 0.08;
+        z-index: -1;
+    }
 }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .causes-one__content {
