@@ -3020,7 +3020,7 @@ body.locked .page-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  height: 540px;
+  height: 100%;
   width: 625px;
   background-color: var(--khater-extra);
   z-index: -1;
@@ -5074,14 +5074,14 @@ body.locked .page-wrapper {
   color: var(--khater-white);
   font-weight: 800;
   line-height: 20px;
-  margin-bottom: 27px;
+  margin-bottom: 10px;
   letter-spacing: -0.02em;
 }
 
 .site-footer__top {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 15px;
 }
 
 .footer-widget__about {
@@ -5502,7 +5502,7 @@ body.locked .page-wrapper {
   top: -30px;
 }
 .feature-two__icon img {
-height: 55px;
+height: 60px;
 }
 .feature-two__icon span {
   position: relative;
@@ -7986,9 +7986,8 @@ height: 55px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--khater-gray);
+  background-color: #eef5ff;
   background-blend-mode: luminosity;
-  opacity: 0.7;
   z-index: -1;
 }
 
