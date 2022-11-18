@@ -279,7 +279,7 @@ ul {
 .section-title {
   position: relative;
   display: block;
-  margin-top: -4px;
+  margin-top: 10px;
   margin-bottom: 46px;
 }
 
@@ -3012,7 +3012,7 @@ body.locked .page-wrapper {
 .about-one {
   position: relative;
   display: block;
-  padding: 35px 0;
+  padding: 0px 0;
   z-index: 1;
 }
 
@@ -4499,7 +4499,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .faq-one__left .section-title {
@@ -5481,7 +5481,7 @@ body.locked .page-wrapper {
   font-weight: 900;
   line-height: 15px;
   letter-spacing: -0.04em;
-  margin: 0px 0 15px 70px;
+  margin: -4px 0px 3px 63px;
   color: #1f162e;
 
 }
@@ -5502,7 +5502,7 @@ body.locked .page-wrapper {
   top: -30px;
 }
 .feature-two__icon img {
-height: 60px;
+height: 45px;
 }
 .feature-two__icon span {
   position: relative;
@@ -11982,7 +11982,7 @@ body.boxed-wrapper {
 .line5 .icon,
 .line5 .icon:before {
   background: #00BBCE;
-  border-color: #00BBCE;
+  border-color: #00BBCE;  
   color: #00BBCE;
 }
 .line5 .circle img{
