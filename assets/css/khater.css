@@ -2502,7 +2502,7 @@ body.locked .page-wrapper {
 }
 
 .main-slider-shape-2 img {
-  width: auto;
+  width: 500px;
 }
 
 .main-slider__content {
@@ -3151,6 +3151,8 @@ body.locked .page-wrapper {
 .about-one__right {
   position: relative;
   display: block;
+  padding: 0 130px;
+  text-align: center;
 }
 
 .about-one__right .section-title {
@@ -3535,7 +3537,7 @@ body.locked .page-wrapper {
   background-size: cover;
   background-position: center;
   mix-blend-mode: luminosity;
-  opacity: .60;
+  opacity: .80;
 }
 
 .become-volunteer-one__shape-1 {
@@ -5431,7 +5433,7 @@ body.locked .page-wrapper {
 .feature-two__single-inner.two{
   position: relative;
   display: block;
-  background-color: #00bbce6b;
+  background-color: #e4a0f769;
   padding: 40px 20px ;
   border-radius: var(--khater-bdr-radius);
   overflow: hidden;
@@ -6706,9 +6708,6 @@ height: 45px;
   transition: all 500ms ease;
 }
 
-.contact-one__single:hover .contact-one__icon {
-  background-color: var(--khater-base);
-}
 
 .contact-one__icon span {
   position: relative;
@@ -7972,7 +7971,7 @@ height: 45px;
 .page-header {
   position: relative;
   display: block;
-  padding: 141px 0 132px;
+  padding: 100px 0 ;
   background-color: var(--khater-black);
   z-index: 1;
 }
@@ -7986,7 +7985,7 @@ height: 45px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #eef5ff;
+  background-color: #ffffff;
   background-blend-mode: luminosity;
   z-index: -1;
 }
@@ -10893,7 +10892,6 @@ height: 45px;
 .contact-three {
   position: relative;
   display: block;
-  background-color: var(--khater-extra);
   padding: 120px 0 180px;
   z-index: 1;
 }
@@ -10919,6 +10917,10 @@ height: 45px;
 .contact-page__form-box {
   position: relative;
   display: block;
+  background-color: var(--khater-gray);
+  opacity: 0.5;
+  border-radius: 12px;
+  padding: 40px;
 }
 
 .contact-page__form {
@@ -11884,7 +11886,7 @@ body.boxed-wrapper {
 .circle img {
   --s: 10px;
   --b: 2px;
-  --w: 200px;
+  --w: 235px;
   --c: #d2bef5;
   width: var(--w);
   aspect-ratio: 1;
@@ -11993,12 +11995,12 @@ body.boxed-wrapper {
 .line6 .circle:before,
 .line6 .icon,
 .line6 .icon:before {
-  background: #00C0F3;
-  border-color: #00C0F3;
-  color: #00C0F3;
+  background: #E4A0F7 ;
+  border-color: #E4A0F7 ;
+  color: #E4A0F7 ;
 }
 .line6 .circle img{
-  --c: #00C0F3 !important;
+  --c: #E4A0F7  !important;
 }
 
 
