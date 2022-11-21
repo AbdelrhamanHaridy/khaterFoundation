@@ -3151,8 +3151,7 @@ body.locked .page-wrapper {
 .about-one__right {
   position: relative;
   display: block;
-  padding: 0 130px;
-  text-align: center;
+  padding: 50px 30px;
 }
 
 .about-one__right .section-title {
@@ -3537,7 +3536,7 @@ body.locked .page-wrapper {
   background-size: cover;
   background-position: center;
   mix-blend-mode: luminosity;
-  opacity: .80;
+  opacity: .40;
 }
 
 .become-volunteer-one__shape-1 {
@@ -4500,8 +4499,7 @@ body.locked .page-wrapper {
 .faq-one__left {
   position: relative;
   display: block;
-  text-align: center;
-  /* padding-bottom: 30px; */
+  padding-bottom: 30px;
 }
 
 .faq-one__left .section-title {
@@ -5425,7 +5423,7 @@ body.locked .page-wrapper {
   display: block;
   background-color: var(--khater-secondary-10);
   padding: 40px 20px ;
-  height: 340px;
+  height: 300px;
   border-radius: var(--khater-bdr-radius);
   overflow: hidden;
   z-index: 1;
@@ -5438,14 +5436,14 @@ body.locked .page-wrapper {
   border-radius: var(--khater-bdr-radius);
   overflow: hidden;
   z-index: 1;
-  height: 340px;
+  height: 300px;
 }
 .feature-two__single-inner.three  {
   position: relative;
   display: block;
   background-color: var(--khater-secondary-20);
   padding: 40px 20px ;
-  height: 340px;
+  height: 300px;
   border-radius: var(--khater-bdr-radius);
   overflow: hidden;
   z-index: 1;
@@ -5553,31 +5551,17 @@ height: 45px;
 .about-two {
   position: relative;
   display: block;
-  padding: 0 0 130px;
+  padding: 100px 0;
 }
 
 .about-two__left {
   position: relative;
   display: block;
-  margin-right: 40px;
 }
 
 .about-two__img-box {
   position: relative;
   display: block;
-}
-
-.about-two__img-box:before {
-  position: absolute;
-  top: 0;
-  left: -60px;
-  content: "";
-  height: 330px;
-  width: 30px;
-  border-radius: 15px;
-  background-image: -moz-linear-gradient(90deg, rgb(251, 212, 90) 0%, rgb(0, 113, 93) 100%);
-  background-image: -webkit-linear-gradient(90deg, rgb(251, 212, 90) 0%, rgb(0, 113, 93) 100%);
-  background-image: -ms-linear-gradient(90deg, rgb(251, 212, 90) 0%, rgb(0, 113, 93) 100%);
 }
 
 .about-two__img {
@@ -5586,7 +5570,7 @@ height: 45px;
 }
 
 .about-two__img img {
-  width: 100%;
+  width: 80%;
   border-radius: var(--khater-bdr-radius);
 }
 
