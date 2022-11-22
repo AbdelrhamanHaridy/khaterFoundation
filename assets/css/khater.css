@@ -923,7 +923,6 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #90c8be;
   position: relative;
   -webkit-transition: all 500ms ease;
   transition: all 800ms ease;
@@ -1062,25 +1061,6 @@ ul {
   margin-top: 10px;
 }
 
-.main-menu .main-menu__list>li>ul>li>a,
-.main-menu .main-menu__list>li>ul>li>ul>li>a,
-.stricky-header .main-menu__list>li>ul>li>a,
-.stricky-header .main-menu__list>li>ul>li>ul>li>a {
-  position: relative;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--khater-gray);
-  letter-spacing: 0;
-  font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px 20px 5px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  background-color: var(--khater-white);
-  border-radius: var(--khater-bdr-radius);
-}
 
 .main-menu .main-menu__list>li>ul>li:hover>a,
 .main-menu .main-menu__list>li>ul>li>ul>li:hover>a,
@@ -7985,7 +7965,7 @@ height: 45px;
   font-size: 40px;
   color: var(--khater-white);
   line-height: 50px;
-  margin-bottom: 6px;
+  margin-bottom: 50px;
   font-weight: 900;
   letter-spacing: -0.04em;
 }
