@@ -7965,7 +7965,7 @@ height: 45px;
   font-size: 40px;
   color: var(--khater-white);
   line-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: -20px;
   font-weight: 900;
   letter-spacing: -0.04em;
 }
