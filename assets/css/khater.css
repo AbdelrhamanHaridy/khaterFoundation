@@ -245,6 +245,7 @@ ul {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0;
+  border: 1px solid var(--khater-primary);
   border-radius: 30px;
   padding: 15px 49px 15px;
   transition: all 0.5s linear;
@@ -269,6 +270,7 @@ ul {
 
 .thm-btn:hover {
   color: var(--khater-white);
+  border: 1px solid #1f162e;
 }
 
 .thm-btn:hover:before {
@@ -1066,7 +1068,6 @@ ul {
 .main-menu .main-menu__list>li>ul>li>ul>li:hover>a,
 .stricky-header .main-menu__list>li>ul>li:hover>a,
 .stricky-header .main-menu__list>li>ul>li>ul>li:hover>a {
-  background-color: var(--khater-extra);
   color: var(--khater-black);
 }
 
@@ -3305,6 +3306,7 @@ body.locked .page-wrapper {
 
 .causes-one__img img {
   width: 100%;
+  height: 250px;
   border-top-left-radius: var(--khater-bdr-radius);
   border-top-right-radius: var(--khater-bdr-radius);
   transition-delay: .1s;
@@ -5411,7 +5413,7 @@ body.locked .page-wrapper {
 .feature-two__single-inner.two{
   position: relative;
   display: block;
-  background-color: #e4a0f769;
+  background-color: var(--khater-secondary-30);
   padding: 40px 20px ;
   border-radius: var(--khater-bdr-radius);
   overflow: hidden;
@@ -10981,6 +10983,10 @@ height: 45px;
 .about-four__img img {
   width: 100%;
   border-radius: var(--khater-bdr-radius);
+  border-radius: 10px 10px  170px 10px;
+  border-bottom: 7px solid #555ac0;
+  border-right: 7px solid #555ac0;
+  box-shadow: 0 0 25px #555ac077;
 }
 
 .about-four__img-two {
