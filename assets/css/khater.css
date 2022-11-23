@@ -7961,12 +7961,13 @@ height: 45px;
   display: block;
   text-align: center;
   z-index: 15;
+  top: 70px;
 }
 
 .page-header__inner h2 {
   font-size: 40px;
   color: var(--khater-white);
-  line-height: 50px;
+  line-height: 20px;
   margin-bottom: 50px;
   font-weight: 900;
   letter-spacing: -0.04em;
@@ -9028,7 +9029,7 @@ height: 45px;
 .event-details {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 120px 0 0 120px;
 }
 
 .event-details__left {
@@ -10982,11 +10983,6 @@ height: 45px;
 
 .about-four__img img {
   width: 100%;
-  border-radius: var(--khater-bdr-radius);
-  border-radius: 10px 10px  170px 10px;
-  border-bottom: 7px solid #555ac0;
-  border-right: 7px solid #555ac0;
-  box-shadow: 0 0 25px #555ac077;
 }
 
 .about-four__img-two {
