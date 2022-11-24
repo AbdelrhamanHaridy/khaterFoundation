@@ -809,52 +809,59 @@
         })
 
         function onZoomInMark(e) {
-            map.panTo(e.latlng).zoomIn(4);
-            map.setView(e.latlng, 13);
+            map.panTo(e.latlng).zoomIn(5);
+            map.setView(e.latlng, 16);
         }
         // function onMapClick(e) {
         //     alert("You clicked the map at " + e.latlng);
         // }
         // map.on('click', onMapClick);
 
+
+        // function onZoomInMark(e) {
+        //     alert(e);
+        //     map.panTo(e.latlng).zoomIn(17);
+        //     map.setView(e.latlng, 11); 
+        // }
+
         // 57357 Children's Cancer Hospital 57357
-        L.marker([30.023051, 31.237779]).addTo(map);
+        L.marker([30.023051, 31.237779]).addTo(map).on('click', onZoomInMark);
 
         // Magdi Yacoub Hospital in Aswan
-        L.marker([24.0882715, 32.900754]).addTo(map);
+        L.marker([24.0882715, 32.900754]).addTo(map).on('click', onZoomInMark);
 
         // Kasr Al Ainy Hospitals, Cairo
-        L.marker([30.031553, 31.226395]).addTo(map);
+        L.marker([30.031553, 31.226395]).addTo(map).on('click', onZoomInMark);
 
         // National Cancer Institute in Cairo
-        L.marker([30.024057, 31.230955]).addTo(map);
+        L.marker([30.024057, 31.230955]).addTo(map).on('click', onZoomInMark);
 
         // Abu El Reesh Japanese Hospital
-        L.marker([30.0287572, 31.2360329]).addTo(map);
+        L.marker([30.0287572, 31.2360329]).addTo(map).on('click', onZoomInMark);
 
         // Abu El Reesh Hospital in Al Mounira 
-        L.marker([30.0315206, 31.2374614]).addTo(map);
+        L.marker([30.0315206, 31.2374614]).addTo(map).on('click', onZoomInMark);
 
         // Face charity in Maadi 
-        L.marker([29.9738291, 31.2749382]).addTo(map);
+        L.marker([29.9738291, 31.2749382]).addTo(map).on('click', onZoomInMark);
 
         // The Egyptian Autistic Society in Maadi
-        L.marker([29.9738268, 31.2749382]).addTo(map);
+        L.marker([29.9738268, 31.2749382]).addTo(map).on('click', onZoomInMark);
 
         // Ahl Masr Foundation in New Cairo
-        L.marker([29.9811238, 31.4344669]).addTo(map);
+        L.marker([29.9811238, 31.4344669]).addTo(map).on('click', onZoomInMark);
 
         // Advance Society for Autism and other Disabilities in New Cairo.
-        L.marker([30.012801, 31.4603227]).addTo(map);
+        L.marker([30.012801, 31.4603227]).addTo(map).on('click', onZoomInMark);
 
         // Suez Canal University Hospital and University in Ismailia
-        L.marker([30.6225795, 32.2837461]).addTo(map);
+        L.marker([30.6225795, 32.2837461]).addTo(map).on('click', onZoomInMark);
 
         // Minya Governorate
-        L.marker([28.1807533, 31.6380565]).addTo(map);
+        L.marker([28.1807533, 31.6380565]).addTo(map).on('click', onZoomInMark);
 
         // 30.671873,32.2802739
-        L.marker([28.1807533, 31.6380565]).addTo(map);
+        L.marker([28.1807533, 31.6380565]).addTo(map).on('click', onZoomInMark);
 
 
 
