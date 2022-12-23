@@ -3030,7 +3030,7 @@ body.locked .page-wrapper {
 }
 
 .about-one__img-box img {
-  border-radius: 14px;
+  border-radius: 4px;
 }
 
 .about-one__img {
@@ -3040,7 +3040,6 @@ body.locked .page-wrapper {
 
 .about-one__img img {
   width: 100%;
-  border-top-right-radius: 100px;
 }
 
 .about-one__img-border {
@@ -4673,7 +4672,7 @@ body.locked .page-wrapper {
 .counter-one__list h3 {
   font-size: 50px;
   padding: 0 10px;
-  color: var(--khater-white);
+  color: #00000059;
   font-weight: 900;
   font-family: var(--khater-font-two) !important;
   letter-spacing: -0.04em;
@@ -9014,7 +9013,7 @@ body.locked .page-wrapper {
 .event-details {
   position: relative;
   display: block;
-  padding: 120px 0 0 120px;
+  padding: 100px
 }
 
 .event-details__left {
