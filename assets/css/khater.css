@@ -8306,7 +8306,7 @@ body.locked .page-wrapper {
   display: block;
   padding: 46px 20px 30px;
   background-color: var(--khater-extra);
-  border-radius: var(--khater-bdr-radius);
+  /* border-radius: var(--khater-bdr-radius); */
   overflow: hidden;
   z-index: 1;
 }
