@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+@import url(../font/DINNextLTArabic-Bold.ttf);
+@import url(../font/DINNextLTArabic-Light.ttf);
+@import url(../font/DINNextLTArabic-Medium.ttf);
+@import url(../font/DINNextLTArabic-Regular-61f8b45816eef6ddfda85480d5e92aa0.ttf);
+@import url(../font/DINPro-Black\ tr.ttf);
+@import url(../font/DINPro-Bold\ tr.ttf);
+@import url(../font/DINPro-Light\ tr.ttf);
+@import url(../font/DINPro-Medium\ tr.ttf);
 
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
 :root {
-  --khater-font: 'DINPro-Medium', sans-serif;
-  --khater-font-two: 'Cairo', sans-serif;
-  --khater-font-three: 'Cairo', sans-serif;
+  --khater-font: 'DINPro-Bold', sans-serif;
+  --khater-font-two: 'DINPro-Light', sans-serif;
+  --khater-font-three: 'DINPro-Medium', sans-serif;
   --khater-gray: #6f7775;
   --khater-gray-rgb: 111, 119, 117;
   --khater-white: #ffffff;
@@ -3029,9 +3037,6 @@ body.locked .page-wrapper {
   display: block;
 }
 
-.about-one__img-box img {
-  border-radius: 4px;
-}
 
 .about-one__img {
   position: relative;
@@ -3277,10 +3282,10 @@ body.locked .page-wrapper {
   right: 0;
   bottom: 0;
   content: "";
-  background-color: rgba(var(--khater-black-rgb), .30);
 }
 
 .causes-one__single:hover .causes-one__img:before {
+  background-color: rgba(var(--khater-black-rgb), .30);
   opacity: 1;
   -webkit-transform: perspective(400px) rotateX(0deg) scale(1.0);
   -ms-transform: perspective(400px) rotateX(0deg) scale(1.0);
@@ -3290,8 +3295,6 @@ body.locked .page-wrapper {
 .causes-one__img img {
   width: 100%;
   height: 250px;
-  /* border-top-left-radius: var(--khater-bdr-radius); */
-  /* border-top-right-radius: var(--khater-bdr-radius); */
   transition-delay: .1s;
   transition-timing-function: ease-in-out;
   transition-duration: .7s;
@@ -3303,10 +3306,12 @@ body.locked .page-wrapper {
 }
 
 .causes-one__cat {
-  background-color: #00BBCE;
+  background-color: #00b9cea2;
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 0px;
+  left: 100px;
+  width: 190px;
+  text-align: center;
   padding: 6px 25px;
   /* border-radius: 15px; */
   z-index: 2;
@@ -8417,10 +8422,7 @@ body.locked .page-wrapper {
   font-weight: 500;
 }
 
-.sidebar__category-list li a:hover {
-  background-color: white;
-  color: var(--khater-black);
-}
+
 
 .sidebar__category-list li.active a {
   background-color: white;
@@ -9013,7 +9015,7 @@ body.locked .page-wrapper {
 .event-details {
   position: relative;
   display: block;
-  padding: 100px
+  padding: 100px 50px;
 }
 
 .event-details__left {
@@ -11170,6 +11172,7 @@ body.locked .page-wrapper {
   position: relative;
   display: block;
   padding: 120px 0 165px;
+  background-color: #f9f4e8
 }
 
 .donation-carousel-page .causes-one__single {
