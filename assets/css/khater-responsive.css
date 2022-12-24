@@ -1190,7 +1190,7 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1385px) {
     .causes-one__content {
-        padding: 22px 15px 30px;
+        padding: 22px 0px 30px;
     }
 
     .causes-one__title {

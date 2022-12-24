@@ -253,7 +253,7 @@ ul {
   color: var(--khater-black);
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0;
   border: 1px solid var(--khater-primary);
   border-radius: 30px;
@@ -2742,7 +2742,7 @@ body.locked .page-wrapper {
   font-weight: 900;
   line-height: 110px;
   letter-spacing: -0.04em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-top: 18px;
   margin-bottom: 24px;
   opacity: 0;
@@ -3077,7 +3077,7 @@ body.locked .page-wrapper {
   font-size: 16px;
   font-weight: 500;
   color: var(--khater-black);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3309,8 +3309,8 @@ body.locked .page-wrapper {
   background-color: #00b9cea2;
   position: absolute;
   bottom: 0px;
-  left: 100px;
-  width: 190px;
+  left: 75px;
+  width: 220px;
   text-align: center;
   padding: 6px 25px;
   /* border-radius: 15px; */
@@ -5094,7 +5094,7 @@ body.locked .page-wrapper {
   color: var(--khater-black);
   background-color: var(--khater-primary);
   padding: 10px 40px 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-radius: 25px;
   transition: all 500ms ease;
 }
@@ -5985,7 +5985,7 @@ body.locked .page-wrapper {
 .causes-two__carousel.owl-theme .owl-nav .owl-prev p {
   font-size: 14px;
   color: var(--khater-black);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 800;
   margin-left: 10px;
   font-family: var(--khater-font);
@@ -5994,7 +5994,7 @@ body.locked .page-wrapper {
 .causes-two__carousel.owl-theme .owl-nav .owl-next p {
   font-size: 14px;
   color: var(--khater-black);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 800;
   font-family: var(--khater-font);
 }
@@ -6349,7 +6349,7 @@ body.locked .page-wrapper {
   color: var(--khater-black);
   background-color: var(--khater-primary);
   padding: 10px 40px 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-radius: 25px;
   transition: all 500ms ease;
 }
@@ -8493,7 +8493,7 @@ body.locked .page-wrapper {
   margin-left: 5px;
   font-weight: 800;
   border-radius: 17px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .sidebar__tags-list a+a {
@@ -8724,7 +8724,7 @@ body.locked .page-wrapper {
   display: inline-block;
   padding: 2px 20px 2px;
   font-weight: 800;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-radius: 17px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -8905,7 +8905,7 @@ body.locked .page-wrapper {
   color: var(--khater-black);
   letter-spacing: 0.1em;
   border-radius: 17px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .comment-one__btn:hover {
@@ -11450,7 +11450,7 @@ body.boxed-wrapper {
 .timeline__event__title {
   font-size: 1.2rem;
   line-height: 1.4;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 600;
   color: #9251ac;
   letter-spacing: 1.5px;
