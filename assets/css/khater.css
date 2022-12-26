@@ -287,16 +287,72 @@ ul {
   top: -40%;
 }
 
-.thm-btn.Healthcare {
+.Healthcare {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  margin-top: 20px;
+  outline: none !important;
+  background-color: var(--khater-primary);
+  color: var(--khater-black);
+  font-size: 14px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  letter-spacing: 0;
+  border: 1px solid var(--khater-primary);
+  border-radius: 30px;
+  padding: 15px 49px 15px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 1;
   border-color: var(--khater-secondary-2) !important;
   background-color: transparent !important;
   color: var(--khater-secondary-2) !important;
+  
+}
+.Healthcare:hover {
+  border-color: var(--khater-secondary-2) !important;
+  background-color: transparent !important;
+  color: var(--khater-secondary-2) !important;
+
+  background-color: var(--khater-secondary-2) !important;
+  border-color: var(--khater-secondary-2) !important;
+  color: #FFF !important;
 }
 
-.thm-btn.being {
+.being {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  margin-top: 20px;
+  outline: none !important;
+  background-color: var(--khater-primary);
+  color: var(--khater-black);
+  font-size: 14px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  letter-spacing: 0;
+  border: 1px solid var(--khater-primary);
+  border-radius: 30px;
+  padding: 15px 49px 15px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 1;
   border-color: var(--khater-secondary-1) !important;
   background-color: transparent !important;
   color: var(--khater-secondary-1) !important;
+}
+
+.being:hover {
+  border-color: var(--khater-secondary-2) !important;
+  background-color: transparent !important;
+  color: var(--khater-secondary-2) !important;
+
+  background-color: var(--khater-secondary-1) !important;
+  border-color: var(--khater-secondary-1) !important;
+  color: #FFF !important;
 }
 
 
