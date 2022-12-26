@@ -288,17 +288,15 @@ ul {
 }
 
 .thm-btn.Healthcare {
-  border-color: var(--khater-secondary-1) !important;
-  background-color: transparent !important;
-  color: var(--khater-secondary-1) !important;
-}
-
-.thm-btn.being {
   border-color: var(--khater-secondary-2) !important;
   background-color: transparent !important;
   color: var(--khater-secondary-2) !important;
+}
 
-
+.thm-btn.being {
+  border-color: var(--khater-secondary-1) !important;
+  background-color: transparent !important;
+  color: var(--khater-secondary-1) !important;
 }
 
 
@@ -3321,13 +3319,13 @@ body.locked .page-wrapper {
 }
 
 .causes-one__cat {
-  background-color: #00b9cea2;
+  /* background-color: #00b9cea2; */
   position: absolute;
   bottom: 0px;
   /* left: 75px; */
   width: 100%;
   text-align: center;
-  padding: 6px 25px;
+  padding: 15px 25px;
   /* border-radius: 15px; */
   z-index: 2;
 }
@@ -4658,7 +4656,7 @@ body.locked .page-wrapper {
 }
 
 .counter-one__list {
-  margin-top: -30px;
+  margin-top: 0px;
   position: relative;
   display: flex;
   align-items: center;
@@ -9072,7 +9070,7 @@ body.locked .page-wrapper {
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 40px;
-  margin-top: 14px;
+  margin-top: 45px;
   margin-bottom: 22px;
 }
 
@@ -11084,7 +11082,7 @@ body.locked .page-wrapper {
 }
 
 .faq-three {
-  margin: 50px 0;
+  margin: 0px 0;
 }
 
 /*--------------------------------------------------------------
