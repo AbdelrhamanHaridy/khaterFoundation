@@ -8326,7 +8326,7 @@ body.locked .page-wrapper {
 .sidebar__post {
   position: relative;
   display: block;
-  padding: 46px 20px 30px;
+  padding: 10px 20px 1px;
   background-color: var(--khater-extra);
   /* border-radius: var(--khater-bdr-radius); */
   overflow: hidden;
@@ -9043,7 +9043,7 @@ body.locked .page-wrapper {
 .event-details__left {
   position: relative;
   display: block;
-  height: 690px;
+  /* height: 690px; */
 }
 
 .event-details__top {
@@ -11186,7 +11186,7 @@ body.locked .page-wrapper {
 .events-carousel-page {
   position: relative;
   display: block;
-  padding: 120px 50px;
+  padding: 60px 50px;
 }
 
 /*--------------------------------------------------------------
