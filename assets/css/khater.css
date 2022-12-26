@@ -287,6 +287,21 @@ ul {
   top: -40%;
 }
 
+.thm-btn.Healthcare {
+  border-color: var(--khater-secondary-1) !important;
+  background-color: transparent !important;
+  color: var(--khater-secondary-1) !important;
+}
+
+.thm-btn.being {
+  border-color: var(--khater-secondary-2) !important;
+  background-color: transparent !important;
+  color: var(--khater-secondary-2) !important;
+
+
+}
+
+
 
 .section-title {
   position: relative;
@@ -398,7 +413,7 @@ ul {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-image: url(../images/loader.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 200px auto;
@@ -3336,6 +3351,7 @@ body.locked .page-wrapper {
   padding: 22px 0px 30px;
   border-top: 0;
 }
+
 .causes-one__content_index {
   position: relative;
   display: block;
@@ -8332,7 +8348,7 @@ body.locked .page-wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding:  4px 20px 5px;
+  padding: 4px 20px 5px;
   padding-right: 18px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -9021,7 +9037,7 @@ body.locked .page-wrapper {
 .event-details {
   position: relative;
   display: block;
-  padding: 50px 50px;
+  padding: 30px;
 }
 
 .event-details__left {
@@ -11068,8 +11084,7 @@ body.locked .page-wrapper {
 }
 
 .faq-three {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 /*--------------------------------------------------------------
@@ -11171,7 +11186,7 @@ body.locked .page-wrapper {
 .events-carousel-page {
   position: relative;
   display: block;
-  padding: 120px 0 165px;
+  padding: 120px 50px;
 }
 
 /*--------------------------------------------------------------
