@@ -322,7 +322,7 @@ ul {
   color: var(--khater-black);
   font-size: 35px;
   line-height: 60px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.04em;
   margin-top: 6px;
 }
@@ -3995,7 +3995,7 @@ body.locked .page-wrapper {
 .brand-one {
   position: relative;
   display: block;
-  padding: 60px 0 60px;
+  padding: 25px 0 60px;
 }
 
 .brand-one .swiper-slide {
@@ -5061,7 +5061,7 @@ body.locked .page-wrapper {
 .footer-widget__title {
   font-size: 20px;
   color: var(--khater-white);
-  font-weight: 800;
+  font-weight: 200;
   line-height: 20px;
   margin-bottom: 10px;
   letter-spacing: -0.02em;
@@ -5270,9 +5270,9 @@ body.locked .page-wrapper {
   margin-left: 15px;
 }
 
-.footer-widget__contact-list li .text p {
+/* .footer-widget__contact-list li .text p {
   font-weight: 700;
-}
+} */
 
 .footer-widget__contact-list li .text p a {
   color: var(--khater-white);
@@ -5544,7 +5544,7 @@ body.locked .page-wrapper {
 .about-two {
   position: relative;
   display: block;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .about-two__left {
@@ -9275,7 +9275,7 @@ body.locked .page-wrapper {
 .donation {
   position: relative;
   display: block;
-  padding: 20px 0 90px;
+  padding: 20px 0 0px;
 }
 
 /*--------------------------------------------------------------
@@ -11193,7 +11193,7 @@ body.locked .page-wrapper {
 .donation-carousel-page {
   position: relative;
   display: block;
-  padding: 120px 0 50px;
+  padding: 0px 0 0px;
   background-color: #f9f4e8
 }
 
