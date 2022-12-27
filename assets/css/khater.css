@@ -8312,7 +8312,7 @@ body.locked .page-wrapper {
   margin: 0;
   font-size: 20px;
   margin-bottom: 4px;
-  font-weight: 900;
+  /* font-weight: 900; */
   letter-spacing: -0.04em;
 }
 
@@ -11053,7 +11053,7 @@ body.locked .page-wrapper {
   display: block;
   z-index: 2;
   width: 80%;
-  left: 132px;
+  left: 150px;
 }
 
 .about-four__img img {
