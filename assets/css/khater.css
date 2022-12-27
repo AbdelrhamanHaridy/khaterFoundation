@@ -378,7 +378,7 @@ ul {
   color: var(--khater-black);
   font-size: 35px;
   line-height: 60px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -0.04em;
   margin-top: 6px;
 }
@@ -4742,6 +4742,17 @@ body.locked .page-wrapper {
 
 .counter-one__single:first-child:before {
   display: none;
+}
+
+.counter-one__text4  
+{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: var(--khater-gray);
+    font-weight: 700;
+    font-family: var(--khater-font-three);
+    line-height: 24px;
 }
 
 .counter-one__count-box {
