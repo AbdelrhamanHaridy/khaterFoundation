@@ -3370,9 +3370,9 @@ body.locked .page-wrapper {
   transition-property: all;
 }
 
-.causes-one__single:hover .causes-one__img img {
+/* .causes-one__single:hover .causes-one__img img {
   transform: scale(1.1) rotate(2deg);
-}
+} */
 
 .causes-one__cat {
   /* background-color: #00b9cea2; */
@@ -3380,14 +3380,14 @@ body.locked .page-wrapper {
   bottom: 0px;
   /* left: 75px; */
   width: 100%;
-  text-align: center;
-  padding: 15px 25px;
+  /* text-align: center; */
+  padding: 15px 10px;
   /* border-radius: 15px; */
   z-index: 2;
 }
 
 .causes-one__cat p {
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 5;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -5152,7 +5152,7 @@ body.locked .page-wrapper {
 }
 
 .footer-widget__about-logo img {
-  width: 200px;
+  width: 180px;
 
 }
 
@@ -11251,7 +11251,7 @@ body.locked .page-wrapper {
 .events-carousel-page {
   position: relative;
   display: block;
-  padding: 60px 50px;
+  padding: 10px 50px;
 }
 
 /*--------------------------------------------------------------
@@ -11264,9 +11264,9 @@ body.locked .page-wrapper {
   background-color: #f9f4e8
 }
 
-.donation-carousel-page .causes-one__single {
+/* .donation-carousel-page .causes-one__single {
   margin-bottom: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Boxed Version
